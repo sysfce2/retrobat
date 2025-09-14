@@ -315,6 +315,46 @@ avspirit_6variation:
   btn_r: 1
   btn_l2: -1
   btn_r2: -1
+bbredux:
+  analog_dpad_mode: 0
+  btn_a: 1
+  btn_b: 8
+  btn_x: -1
+  btn_y: 0
+  btn_l: -1
+  btn_r: -1
+  btn_l2: -1
+  btn_r2: -1
+bbredux_modern8:
+  analog_dpad_mode: 0
+  btn_a: -1
+  btn_b: -1
+  btn_x: 8
+  btn_y: 0
+  btn_l: -1
+  btn_r: 1
+  btn_l2: -1
+  btn_r2: -1
+bbredux_8variation:
+  analog_dpad_mode: 0
+  btn_a: 8
+  btn_b: 0
+  btn_x: -1
+  btn_y: -1
+  btn_l: -1
+  btn_r: -1
+  btn_l2: -1
+  btn_r2: 1
+bbredux_6variation:
+  analog_dpad_mode: 0
+  btn_a: -1
+  btn_b: -1
+  btn_x: 8
+  btn_y: 0
+  btn_l: -1
+  btn_r: 1
+  btn_l2: -1
+  btn_r2: -1
 btime:
   analog_dpad_mode: 0
 btime_modern8:
@@ -345,6 +385,46 @@ btime_6variation:
   btn_y: 0
   btn_l: -1
   btn_r: -1
+  btn_l2: -1
+  btn_r2: -1
+bublbobl:
+  analog_dpad_mode: 0
+  btn_a: 1
+  btn_b: 8
+  btn_x: -1
+  btn_y: 0
+  btn_l: -1
+  btn_r: -1
+  btn_l2: -1
+  btn_r2: -1
+bublbobl_modern8:
+  analog_dpad_mode: 0
+  btn_a: -1
+  btn_b: -1
+  btn_x: 8
+  btn_y: 0
+  btn_l: -1
+  btn_r: 1
+  btn_l2: -1
+  btn_r2: -1
+bublbobl_8variation:
+  analog_dpad_mode: 0
+  btn_a: 8
+  btn_b: 0
+  btn_x: -1
+  btn_y: -1
+  btn_l: -1
+  btn_r: -1
+  btn_l2: -1
+  btn_r2: 1
+bublbobl_6variation:
+  analog_dpad_mode: 0
+  btn_a: -1
+  btn_b: -1
+  btn_x: 8
+  btn_y: 0
+  btn_l: -1
+  btn_r: 1
   btn_l2: -1
   btn_r2: -1
 deadconx:
