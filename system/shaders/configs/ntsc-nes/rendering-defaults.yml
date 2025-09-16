@@ -1,4 +1,5 @@
 default:
+  shaderdx12: ntsc/tiny_ntsc
   shader: nes_raw_palette/ntsc-nes
   ares: nes_raw_palette/ntsc-nes
 # Reshader  

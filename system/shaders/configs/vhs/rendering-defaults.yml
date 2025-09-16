@@ -1,4 +1,5 @@
 default:
+  shaderdx12: vhs/gristleVHS
   shader: vhs/vhs
   ares: vhs/vhs
 # Reshader  

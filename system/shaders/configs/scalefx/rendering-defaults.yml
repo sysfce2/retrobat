@@ -1,4 +1,5 @@
 default:
+  shaderdx12: edge-smoothing/scalenx/scale2x
   shaderGL: scalefx/scalefx
   shader: edge-smoothing/scalefx/scalefx
   ares: edge-smoothing/scalefx/scalefx

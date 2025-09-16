@@ -1,6 +1,7 @@
 ## RETRO
 default:
   # shader affects retroarch shaders
+  shaderdx12: pixel-art-scaling/bilinear-adjustable
   shaderGL: interpolation/sharp-bilinear-simple
   shader: pixel-art-scaling/sharp-bilinear-simple
   # ares
