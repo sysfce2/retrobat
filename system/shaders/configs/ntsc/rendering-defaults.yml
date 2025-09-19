@@ -1,6 +1,7 @@
 ## NTSC
 default:
   # libretro
+  shaderdx12: ntsc/mame-ntsc
   shaderGL: ntsc/ntsc
   shader: ntsc/ntsc-simple
   # ares

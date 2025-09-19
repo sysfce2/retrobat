@@ -1,4 +1,5 @@
 default:
+  shaderdx12: vhs/vhs_mpalko
   shader: vhs/ntsc-vcr
   ares: vhs/ntsc-vcr
 # Reshader  

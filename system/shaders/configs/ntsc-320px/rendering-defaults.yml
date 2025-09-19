@@ -1,4 +1,5 @@
 default:
+  shaderdx12: ntsc/tiny_ntsc
   shaderGL: ntsc/ntsc-320px
   shader: ntsc/ntsc-320px-composite
   ares: ntsc/ntsc-320px-composite
