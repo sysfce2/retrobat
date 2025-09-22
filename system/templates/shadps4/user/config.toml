@@ -2,7 +2,9 @@
 checkCompatibilityOnStartup = false
 chooseHomeTab = "General"
 compatibilityEnabled = false
+defaultControllerID = ""
 enableDiscordRPC = false
+isConnectedToNetwork = false
 isDevKit = false
 isPS4Pro = false
 isPSNSignedIn = false
@@ -12,10 +14,12 @@ logType = "sync"
 showSplash = false
 sideTrophy = "right"
 trophyNotificationDuration = 6.0
-userName = "shadPS4"
+userName = "RetroBat"
+volumeSlider = 100
 
 [Input]
-cursorHideTimeout = 5
+backgroundControllerInput = false
+cursorHideTimeout = 1
 cursorState = 1
 isMotionControlsEnabled = true
 specialPadClass = 1
@@ -27,14 +31,21 @@ allowHDR = false
 copyGPUBuffers = false
 directMemoryAccess = false
 dumpShaders = false
+fsrEnabled = true
 Fullscreen = true
 FullscreenMode = "Fullscreen (Borderless)"
+internalScreenHeight = 720
+internalScreenWidth = 1280
 nullGpu = false
 patchShaders = false
+presentMode = "Mailbox"
+rcasAttenuation = 250
+rcasEnabled = true
+readbackLinearImages = false
 readbacks = false
 screenHeight = 720
 screenWidth = 1280
-vblankDivider = 1
+vblankFrequency = 60
 
 [Vulkan]
 crashDiagnostic = false
@@ -48,9 +59,11 @@ validation_sync = false
 
 [Debug]
 CollectShader = false
+ConfigVersion = "1c0ec3be2a2e37ff6870b0d9f306002b70eefa9e"
 DebugDump = false
 FPSColor = true
 isSeparateLogFilesEnabled = false
+logEnabled = true
 
 [Keys]
 TrophyKey = ""
