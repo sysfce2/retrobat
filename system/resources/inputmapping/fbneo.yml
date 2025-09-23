@@ -839,6 +839,51 @@ sf2:
   Medium Kick: b
   Strong Kick: rightshoulder
   Service: leftstick
+sf2_modern8:
+  players: 2
+  Coin: back
+  Start: start
+  Up: dpup
+  Down: dpdown
+  Left: dpleft
+  Right: dpright
+  Weak Punch: x
+  Medium Punch: y
+  Strong Punch: rightshoulder
+  Weak Kick: a
+  Medium Kick: b
+  Strong Kick: righttrigger
+  Service: leftstick
+sf2_8alternative:
+  players: 2
+  Coin: back
+  Start: start
+  Up: dpup
+  Down: dpdown
+  Left: dpleft
+  Right: dpright
+  Weak Punch: x
+  Medium Punch: y
+  Strong Punch: rightshoulder
+  Weak Kick: a
+  Medium Kick: b
+  Strong Kick: righttrigger
+  Service: leftstick
+sf2_6alternative:
+  players: 2
+  Coin: back
+  Start: start
+  Up: dpup
+  Down: dpdown
+  Left: dpleft
+  Right: dpright
+  Weak Punch: x
+  Medium Punch: y
+  Strong Punch: rightshoulder
+  Weak Kick: a
+  Medium Kick: b
+  Strong Kick: leftshoulder
+  Service: leftstick
 sfzch:
   players: 2
   Coin: back
