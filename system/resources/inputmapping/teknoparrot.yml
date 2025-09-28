@@ -2675,6 +2675,9 @@ akb48_gun:
   mouseright_2: ExtensionOne18 # P2 Right Trigger
   ExtensionOne13: kb_S # Service
   Test: kb_T # Test
+  ExtensionOne11: kb_Down  # Down Select
+  ExtensionOne12: kb_Up  # Up Select
+  P1ButtonUp: kb_Return  # Enter
   
 akb48:
   Test: l3  # Test
@@ -2717,6 +2720,9 @@ darkescape4d_gun:
   mousemiddle_1: ExtensionOne16 # 2D/3D Toggle
   ExtensionOne13: kb_S # Service
   Test: kb_T # Test
+  ExtensionOne11: kb_Down  # Down Select
+  ExtensionOne12: kb_Up  # Up Select
+  P1ButtonUp: kb_Return  # Enter
   
 darkescape4d:
   Test: l3  # Test
@@ -2776,6 +2782,9 @@ dsps_gun:
   Rotary1Right: kb_Right  # Wheel Right
   ExtensionOne13: kb_S # Service
   Test: kb_T # Test
+  ExtensionOne11: kb_Down  # Down Select
+  ExtensionOne12: kb_Up  # Up Select
+  P1ButtonUp: kb_Return  # Enter
   
 dsps:
   Test: l3  # Test
