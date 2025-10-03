@@ -527,7 +527,8 @@
             "axis": 0
           }
         ],
-        "dinput": false
+        "dinput": false,
+        "deadzone": 5
       }
     },
     "input_profile_binding": [

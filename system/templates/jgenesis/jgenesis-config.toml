@@ -1,4 +1,4 @@
-config_version = "0.10.0"
+config_version = "0.10.1"
 rom_search_dirs = []
 recent_open_list = []
 egui_theme = "SystemDefault"
@@ -67,7 +67,7 @@ emulate_ym2612_ladder_effect = true
 genesis_lpf_enabled = true
 genesis_lpf_cutoff = 3390
 ym2612_2nd_lpf_enabled = false
-ym2612_2nd_lpf_cutoff = 6725
+ym2612_2nd_lpf_cutoff = 7973
 ym2612_enabled = true
 psg_enabled = true
 
