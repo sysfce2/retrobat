@@ -118,6 +118,25 @@
   <neveroverwrite path="emulators\zinc\zinc.cfg"/>
   <neveroverwrite path="retrobat.ini"/>
   <actions>
+    <delete path="emulators\supermodel\Sega Model 3 UI.exe"/>
+  </actions>
+  <actions version="7.3.2-stable-win64">
+    <move path="tattoos" to="user\tattoos"/>
+    <rename path="retrobat.exe" to="retrobat.exe.bak"/>
+    <delete path="emulationstation\.emulationstation\es_systems_ps5.cfg"/>
+    <delete path="emulationstation\es-checkversion.cmd"/>
+    <delete path="emulationstation\es-update.cmd"/>
+    <delete path="system\scripts\es-checkversion.cmd"/>
+    <delete path="system\scripts\es-update.cmd"/>
+    <delete path="emulators\retroarch\cores\config\mame_libretro.dll"/>
+    <delete path="emulators\retroarch\cores\config\picodrive_libretro.dll"/>
+    <delete path="emulators\rpcs3\config.yml"/>
+    <rename path="emulators\rpcs3\config\config.yml" to="emulators\rpcs3\config\config.yml.bak"/>
+    <rename path="emulators\mesen\settings.json" to="emulators\mesen\settings.json.bak"/>
+    <rename path="emulators\ymir\Ymir.toml" to="emulators\ymir\Ymir.toml.bak"/>
+    <rename path="emulators\azahar\user\config\qt-config.ini" to="emulators\azahar\user\config\qt-config.ini.bak"/>
+  </actions>
+  <actions version="7.3.2.1-stable-win64">
     <move path="tattoos" to="user\tattoos"/>
     <rename path="retrobat.exe" to="retrobat.exe.bak"/>
     <delete path="emulationstation\.emulationstation\es_systems_ps5.cfg"/>
