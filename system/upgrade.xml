@@ -119,6 +119,12 @@
   <neveroverwrite path="retrobat.ini"/>
   <actions>
     <delete path="emulators\supermodel\Sega Model 3 UI.exe"/>
+    <rename path="emulators\gopher64\portable_data\config\config.json" to="emulators\gopher64\portable_data\config\config.json.bak"/>
+    <rename path="emulators\jgenesis\jgenesis-config.toml" to="emulators\jgenesis\jgenesis-config.toml.bak"/>
+    <rename path="emulators\xenia-canary\xenia-canary.config.toml" to="emulators\xenia-canary\xenia-canary.config.toml.bak"/>
+    <rename path="emulators\xenia\xenia.config.toml" to="emulators\xenia\xenia.config.toml.bak"/>
+    <rename path="emulators\bizhawk\config.ini" to="emulators\bizhawk\config.ini.bak"/>
+    <rename path="emulators\shadps4\user\config.toml" to="emulators\shadps4\user\config.toml.bak"/>
   </actions>
   <actions version="7.3.2-stable-win64">
     <move path="tattoos" to="user\tattoos"/>

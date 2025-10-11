@@ -9962,4 +9962,112 @@ term2:
   Right: dpright
   Fire 1: x
   Fire 2: a
-#pre90s d_4enraya
+4enraya:
+  players: 2
+  Coin: back
+  Start: start
+  Left: dpleft
+  Right: dpright
+  Button 1: x
+  Button 2: a
+unkpac:
+  players: 1
+  Coin 1: back
+  Start: start
+  Up: dpup
+  Down: dpdown
+  Left: dpleft
+  Right: dpright
+unksig:
+  players: 1
+  Coin 1: back
+  Start: start
+  Deal: x
+  Down: dpdown
+  Left: dpleft
+  Right: dpright
+  Fire: a
+aeroboto:
+  players: 2
+  Coin: back
+  Start: start
+  Up: dpup
+  Down: dpdown
+  Left: dpleft
+  Right: dpright
+  Button 1: x
+  Button 2: a
+formatz:
+  players: 2
+  Coin: back
+  Start: start
+  Up: dpup
+  Down: dpdown
+  Left: dpleft
+  Right: dpright
+  Button 1: x
+  Button 2: a
+akazukin:
+  players: 2
+  Coin: back
+  Start: start
+  Up: dpup
+  Down: dpdown
+  Left: dpleft
+  Right: dpright
+  Button 1: x
+  Button 2: a
+alinvade:
+  players: 1
+  Coin: back
+  Start: start
+  Left: dpleft
+  Right: dpright
+  Button 1: a
+sstingry:
+  players: 2
+  Coin 1: back
+  Start 1: start
+  Coin 2: back
+  Start 2: start
+  Up: dpup
+  Down: dpdown
+  Left: dpleft
+  Right: dpright
+  Fire 1: x
+  Fire 2: a
+kyros:
+  players: 2
+  Coin 1: back
+  Start 1: start
+  Coin 2: back
+  Start 2: start
+  Up: dpup
+  Down: dpdown
+  Left: dpleft
+  Right: dpright
+  Fire 1: x
+  Fire 2: a
+paddlema:
+  players: 4
+  Coin: back
+  Start: start
+  Up: dpup
+  Down: dpdown
+  Left: dpleft
+  Right: dpright
+  Button 1: x
+  Button 2: a
+  Service: rightstick
+tnextspc:
+  players: 2
+  Coin: back
+  Start: start
+  Up: dpup
+  Down: dpdown
+  Left: dpleft
+  Right: dpright
+  Button 1: x
+  Button 2: a
+  Service: rightstick
+#pre90s d_alpha68k2

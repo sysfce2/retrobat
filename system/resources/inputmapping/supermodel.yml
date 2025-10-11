@@ -204,7 +204,6 @@ daytona2:
   InputGearShift2: JOY_south
   InputGearShift3: JOY_west
   InputGearShift4: JOY_east
-  InputGearShiftN
   InputVR1: JOY_dpup
   InputVR2: JOY_dpdown
   InputVR3: JOY_dpleft
