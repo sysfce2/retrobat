@@ -1,0 +1,100 @@
+{
+  "Controllers": [
+    {
+        "Emulator": "dolphin",
+        "Name": "MAYFLASH GameCube Controller Adapter",
+        "Guid": "03000000790000004318000000016800",
+        "Driver": "DInput",
+        "Mapping": {
+            "Triggers/L-Analog": "`Full Axis Xr+`",
+            "Triggers/R-Analog": "`Full Axis Yr+`",
+            "Buttons/A": "`Button 1`",
+            "Buttons/B": "`Button 2`",
+            "Buttons/X": "`Button 0`",
+            "Buttons/Y": "`Button 3`",
+            "Buttons/Z": "`Button 7`",
+            "Buttons/Start": "`Button 9`",
+            "D-Pad/Up": "`Button 12`",
+            "D-Pad/Down": "`Button 14`",
+            "D-Pad/Left": "`Button 15`",
+            "D-Pad/Right": "`Button 13`",
+            "Main Stick/Up": "`Axis Y-`",
+            "Main Stick/Down": "`Axis Y+`",
+            "Main Stick/Left": "`Axis X-`",
+            "Main Stick/Right": "`Axis X+`",
+            "Main Stick/Calibration": "100.00 101.96 104.75 107.35 109.13 110.30 105.04 101.96 100.00 101.96 105.65 105.14 105.94 103.89 104.87 101.04 100.00 101.96 107.16 107.49 105.93 103.65 102.31 101.96 100.00 101.96 103.68 108.28 108.05 105.96 103.66 101.48",
+            "C-Stick/Up": "`Axis Z-`",
+            "C-Stick/Down": "`Axis Z+`",
+            "C-Stick/Left": "`Axis Zr-`",
+            "C-Stick/Right": "`Axis Zr+`",
+            "C-Stick/Calibration": "100.00 101.96 104.31 104.51 105.93 104.41 103.44 101.96 100.00 101.96 104.07 105.45 109.33 107.39 104.91 101.96 100.00 101.96 106.79 107.84 105.66 104.16 102.91 100.38 98.14 101.63 105.29 107.30 106.77 104.73 104.87 100.92",
+            "Triggers/L": "`Full Axis Xr+`",
+            "Triggers/R": "`Full Axis Yr+`",
+            "Main Stick/Dead Zone": "15.",
+            "C-Stick/Dead Zone": "15.",
+            "Triggers/Threshold": "84.",
+            "Triggers/Dead Zone": "8."
+        },
+        "HotKeyMapping": {
+            "General/Exit": "@(`Button 9`+`Button 7`)",
+            "General/Toggle Pause": "@(`Button 9`+`Button 0`)",
+            "Save State/Save to Selected Slot": "@(`Button 9`+`Button 1`)",
+            "General/Take Screenshot": "@(`Button 9`+`Button 1`)",
+            "Load State/Load from Selected Slot": "@(`Button 9`+`Button 2`)",
+            "Other State Hotkeys/Increase Selected State Slot": "@(`Button 9`+`Button 12`)",
+            "Other State Hotkeys/Decrease Selected State Slot": "@(`Button 9`+`Button 14`)"
+        },
+        "ControllerInfo": {
+            "needActivationSwitch": "false"
+        }
+    },
+    {
+        "Emulator": "dolphin",
+        "Name": "raphnet technologies Dual Gamecube to USB v3.6",
+        "Guid": "030000009b2800006500000000000000",
+        "Driver": "SDL",
+        "Mapping": {
+            "Triggers/L-Analog": "`Full Axis 5+`",
+            "Triggers/R-Analog": "`Full Axis 2+`",
+            "Buttons/A": "`Button 0`",
+            "Buttons/B": "`Button 1`",
+            "Buttons/X": "`Button 7`",
+            "Buttons/Y": "`Button 8`",
+            "Buttons/Z": "`Button 2`",
+            "Buttons/Start": "`Button 3`",
+            "D-Pad/Up": "`Button 10`",
+            "D-Pad/Down": "`Button 11`",
+            "D-Pad/Left": "`Button 12`",
+            "D-Pad/Right": "`Button 13`",
+            "Main Stick/Up": "`Axis 1-`",
+            "Main Stick/Down": "`Axis 1+`",
+            "Main Stick/Left": "`Axis 0-`",
+            "Main Stick/Right": "`Axis 0+`",
+            "Main Stick/Calibration": "100.00 101.96 104.75 107.35 109.13 110.30 105.04 101.96 100.00 101.96 105.65 105.14 105.94 103.89 104.87 101.04 100.00 101.96 107.16 107.49 105.93 103.65 102.31 101.96 100.00 101.96 103.68 108.28 108.05 105.96 103.66 101.48",
+            "C-Stick/Up": "`Axis 4-`",
+            "C-Stick/Down": "`Axis 4+`",
+            "C-Stick/Left": "`Axis 3-`",
+            "C-Stick/Right": "`Axis 3+`",
+            "C-Stick/Calibration": "100.00 101.96 104.31 104.51 105.93 104.41 103.44 101.96 100.00 101.96 104.07 105.45 109.33 107.39 104.91 101.96 100.00 101.96 106.79 107.84 105.66 104.16 102.91 100.38 98.14 101.63 105.29 107.30 106.77 104.73 104.87 100.92",
+            "Triggers/L": "`Full Axis 5+`",
+            "Triggers/R": "`Full Axis 2+`",
+            "Main Stick/Dead Zone": "15.",
+            "C-Stick/Dead Zone": "15.",
+            "Triggers/Threshold": "85.",
+            "Triggers/Dead Zone": "8."
+        },
+        "HotKeyMapping": {
+            "General/Exit": "@(`Button 3`+`Button 2`)",
+            "General/Toggle Pause": "@(`Button 3`+`Button 7`)",
+            "Save State/Save to Selected Slot": "@(`Button 3`+`Button 0`)",
+            "General/Take Screenshot": "@(`Button 3`+`Button 0`)",
+            "Load State/Load from Selected Slot": "@(`Button 3`+`Button 1`)",
+            "Other State Hotkeys/Increase Selected State Slot": "@(`Button 3`+`Button 10`)",
+            "Other State Hotkeys/Decrease Selected State Slot": "@(`Button 3`+`Button 11`)"
+        },
+        "ControllerInfo": {
+            "needActivationSwitch": "false"
+        }
+    }
+  ]
+}
