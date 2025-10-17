@@ -175,6 +175,9 @@
 \system\templates\user\inputmapping\mame\README.txt|\user\inputmapping\mame\README.txt
 \system\templates\vita3k\config.yml|\emulators\vita3k\config.yml
 \system\templates\vita3k\user.xml|\saves\psvita\vita3k\ux0\user\00\user.xml
+\system\templates\vkquake\vkQuake.cfg|\roms\quake\hipnotic\vkQuake.cfg
+\system\templates\vkquake\vkQuake.cfg|\roms\quake\id1\vkQuake.cfg
+\system\templates\vkquake\vkQuake.cfg|\roms\quake\rogue\vkQuake.cfg
 \system\templates\winuae\winuae.ini|\emulators\winuae\winuae.ini
 \system\templates\xemu\xemu.toml|\emulators\xemu\xemu.toml
 \system\templates\xenia-canary\gamecontrollerdb.txt|\emulators\xenia-canary\gamecontrollerdb.txt

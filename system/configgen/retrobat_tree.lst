@@ -280,6 +280,15 @@ records\output
 roms
 roms\cgenius
 roms\cgenius\games
+roms\quake
+roms\quake\hipnotic
+roms\quake\id1
+roms\quake\rogue
+roms\quake2
+roms\quake2\baseq2
+roms\quake2\rogue
+roms\quake2\xatrix
+roms\quake2\zaero
 roms\singe
 roms\sonicmania
 roms\sonicretro
