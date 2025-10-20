@@ -510,7 +510,7 @@
     {
         "Emulator": "libretro",
         "Name": "8BitDo M30 dinput",
-        "Guid": "03000000c82d00005106000000000000",
+        "Guid": "03000000c82d00005106000000000000,03000000c82d00000650000000000000",
         "Driver": "xinput",
         "Mapping": {
             "analog_dpad_mode": "0",
@@ -574,7 +574,7 @@
     {
         "Emulator": "libretro",
         "Name": "8BitDo M30 dinput",
-        "Guid": "03000000c82d00005106000000000000",
+        "Guid": "03000000c82d00005106000000000000,03000000c82d00000650000000000000",
         "Driver": "sdl2",
         "Mapping": {
             "analog_dpad_mode": "0",
@@ -638,7 +638,7 @@
     {
         "Emulator": "libretro",
         "Name": "8BitDo M30 dinput",
-        "Guid": "03000000c82d00005106000000000000",
+        "Guid": "03000000c82d00005106000000000000,03000000c82d00000650000000000000",
         "Driver": "dinput",
         "Mapping": {
             "analog_dpad_mode": "0",
@@ -702,7 +702,7 @@
     {
         "Emulator": "ares",
         "Name": "8BitDo M30 dinput",
-        "Guid": "03000000c82d00005106000000000000",
+        "Guid": "03000000c82d00005106000000000000,03000000c82d00000650000000000000",
         "Driver": "SDL",
         "Mapping": {
             "Pad.Up": "0/1/Lo_1/1/Lo",
@@ -722,7 +722,7 @@
     {
         "Emulator": "bizhawk",
         "Name": "8BitDo M30 dinput",
-        "Guid": "03000000c82d00005106000000000000",
+        "Guid": "03000000c82d00005106000000000000,03000000c82d00000650000000000000",
         "Mapping": {
             "Up": "LStickUp_DpadUp",
             "Down": "LStickDown_DpadDown",
@@ -744,7 +744,7 @@
     {
         "Emulator": "jgenesis",
         "Name": "8BitDo M30 dinput",
-        "Guid": "03000000c82d00005106000000000000",
+        "Guid": "03000000c82d00005106000000000000,03000000c82d00000650000000000000",
         "Driver": "dinput",
         "Mapping": {
             "up": "Hat 0 Up_Axis 1 -",
@@ -767,7 +767,7 @@
     {
         "Emulator": "kega-fusion",
         "Name": "8BitDo M30 dinput",
-        "Guid": "03000000c82d00005106000000000000",
+        "Guid": "03000000c82d00005106000000000000,03000000c82d00000650000000000000",
         "Driver": "",
         "Mapping": {
             "buttons": "50,51,48,49,0,1,7,11,3,4,6,10,8,9,10,11",
@@ -777,7 +777,7 @@
     {
         "Emulator": "mednafen",
         "Name": "8BitDo M30 dinput",
-        "Guid": "03000000c82d00005106000000000000",
+        "Guid": "03000000c82d00005106000000000000,03000000c82d00000650000000000000",
         "Driver": "dinput",
         "Mapping": {
             "a": "button_0",
