@@ -164,7 +164,6 @@
 \system\templates\sonicretro\settings.ini|\roms\sonicretro\sonic2\settings.ini
 \system\templates\sonicretro\soniccd\settings.ini|\roms\sonicretro\soniccd\settings.ini
 \system\templates\ssf\SSF.ini|\emulators\ssf\SSF.ini
-\system\templates\steam\pinballfx3.cmd|\emulators\steam\pinballfx3.cmd
 \system\templates\stella\stella.sqlite3|\emulators\stella\stella.sqlite3
 \system\templates\sudachi\qt-config.ini|\emulators\sudachi\user\config\qt-config.ini
 \system\templates\supermodel\NVRAM.zip|\emulators\supermodel\NVRAM
