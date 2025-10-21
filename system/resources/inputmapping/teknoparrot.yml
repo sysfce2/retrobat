@@ -7016,6 +7016,31 @@ medarunogunman_gun:
   P2ButtonStart: kb_2 # P2 Start
   Service1: kb_S # Service
   Test: kb_T # Test
+  
+mib:
+  Test: l3  # Test
+  Service1: r3  # Service
+  Coin1: select  # Coin P1
+  P1ButtonStart: start  # P1 Start
+  P1Button1: righttrigger  # P1 Trigger
+  Analog0: rightstickleft  # P2 Gun X
+  Analog2: rightstickup  # P2 Gun Y
+  Coin2: select  # Coin P2
+  P2ButtonStart: start  # P2 Start
+  P2Button1: righttrigger  # P2 Trigger
+
+mib_gun:
+  # rawinput:
+  Test: kb_T                 # Test
+  Service1: kb_S            # Service
+  # Player 1
+  Coin1: kb_5               # Coin 1
+  P1ButtonStart: kb_1       # P1 Start
+  mouseleft_1: P1Button1    # P1 Left Trigger
+  # Player 2
+  Coin2: kb_6               # Coin 2
+  P2ButtonStart: kb_2       # P2 Start
+  mouseleft_2: P2Button1    # P2 Left Trigger
 
 missionimpossible:
   Analog0: rightstickleft # Player 1 Gun X
