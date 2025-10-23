@@ -148,6 +148,12 @@ emulators\dolphin-triforce\User
 emulators\dolphin-triforce\User\Config
 emulators\dolphin-triforce\User\GameSettings
 emulators\dosbox
+emulators\dosbox-pure
+emulators\dosbox-pure\saves
+emulators\dosbox-pure\system
+emulators\dosbox-staging
+emulators\dosbox-staging\mt32-roms
+emulators\dosbox-staging\soundfonts
 emulators\duckstation
 emulators\eden
 emulators\eden\user

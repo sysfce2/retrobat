@@ -290,6 +290,57 @@
 		<region>wr</region>
 	</game>
 	<game>
+		<path>./dosbox-pure.menu</path>
+		<name>DOSBox Pure Unleashed (MS-DOS, Windows 3.x, Windows 95)</name>
+		<desc>Run DOSBox-Pure (MS-DOS, Windows 3.x, Windows 95).</desc>
+		<image>./media/dosbox-pure-logo.png</image>
+		<marquee>./media/dosbox-pure-logo.png</marquee>
+		<rating>0</rating>
+		<releasedate />
+		<developer>Schelling</developer>
+		<publisher>DOSBox Team</publisher>
+		<genre>Emulator</genre>
+		<playcount />
+		<lastplayed />
+		<gametime />
+		<lang>en</lang>
+		<region>wr</region>
+	</game>
+	<game>
+		<path>./dosbox_pure_libretro.menu</path>
+		<name>DOSBox Pure Libretro (MS-DOS)</name>
+		<desc>Run DOSBox Pure Libretro.</desc>
+		<image>./media/dosbox_pure_libretro-logo.png</image>
+		<marquee>./media/dosbox_pure_libretro-logo.png</marquee>
+		<rating>0</rating>
+		<releasedate />
+		<developer>DOSBox Pure Team</developer>
+		<publisher>DOSBox Pure Team</publisher>
+		<genre>Emulator</genre>
+		<playcount />
+		<lastplayed />
+		<gametime />
+		<lang>en</lang>
+		<region>wr</region>
+	</game>
+	<game>
+		<path>./dosbox-staging.menu</path>
+		<name>DOSBox Staging (MS-DOS, Windows 3.x, Windows 95)</name>
+		<desc>Run DOSBox-Staging (MS-DOS, Windows 3.x, Windows 95).</desc>
+		<image>./media/dosbox-staging-logo.png</image>
+		<marquee>./media/dosbox-staging-logo.png</marquee>
+		<rating>0</rating>
+		<releasedate />
+		<developer>DOSBox Staging team</developer>
+		<publisher>DOSBox Staging team</publisher>
+		<genre>Emulator</genre>
+		<playcount />
+		<lastplayed />
+		<gametime />
+		<lang>en</lang>
+		<region>wr</region>
+	</game>
+	<game>
 		<path>./eden.menu</path>
 		<name>Eden (Switch)</name>
 		<desc>Run Eden (Switch). This software is not provided by RetroBat.</desc>
@@ -818,23 +869,6 @@
 		<releasedate />
 		<developer>Shima</developer>
 		<publisher>Shima</publisher>
-		<genre>Emulator</genre>
-		<playcount />
-		<lastplayed />
-		<gametime />
-		<lang>en</lang>
-		<region>wr</region>
-	</game>
-	<game>
-		<path>./dosbox_pure_libretro.menu</path>
-		<name>DOSBox Pure Libretro (MS-DOS)</name>
-		<desc>Run DOSBox Pure Libretro.</desc>
-		<image>./media/dosbox_pure_libretro-logo.png</image>
-		<marquee>./media/dosbox_pure_libretro-logo.png</marquee>
-		<rating>0</rating>
-		<releasedate />
-		<developer>DOSBox Pure Team</developer>
-		<publisher>DOSBox Pure Team</publisher>
 		<genre>Emulator</genre>
 		<playcount />
 		<lastplayed />
