@@ -55,6 +55,9 @@
 \system\templates\gemrb\GemRB.cfg|\emulators\gemrb\GemRB.cfg
 \system\templates\gopher64\config.json|\emulators\gopher64\portable_data\config\config.json
 \system\templates\gzdoom\gzdoom_portable.ini|\emulators\gzdoom\gzdoom_portable.ini
+\system\templates\halflife\config.cfg|\roms\halflife\valve\config.cfg
+\system\templates\halflife\opengl.cfg|\roms\halflife\valve\opengl.cfg
+\system\templates\halflife\video.cfg|\roms\halflife\valve\video.cfg
 \system\templates\hatari\hatari.cfg|\emulators\hatari\hatari.cfg
 \system\templates\hbmame\ctrlr\ds4_ds5.cfg|\saves\hbmame\ctrlr\ds4_ds5.cfg
 \system\templates\hbmame\ctrlr\switch_pro.cfg|\saves\hbmame\ctrlr\switch_pro.cfg
