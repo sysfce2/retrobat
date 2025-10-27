@@ -578,69 +578,1074 @@
 ## RetroBat 6.4
 <details>
 
-### Emulators/cores/systems:
-    Lime3DS : move to new version with new .exe name
-    Add libretro-SNES9X2005 for compatibility with older rom hacks
-    Add JGenesis for sega32x
-    Update Bizhawk and add 3ds core
-    Update OpenMSX
-    Add CGenius (Commander Keen port)
-    Add bsnes-jg core
-    Add Ship of Harkidian (Zelda Ocarina of Time port)
-    Add Vircon32
-    Add RAZE
+### Emulators\cores:
+- Lime3DS : move to new version with new .exe name
+- Add libretro-SNES9X2005 for compatibility with older rom hacks
+- Add JGenesis for sega32x
+- Update Bizhawk and add 3ds core
+- Update OpenMSX
+- Add CGenius (Commander Keen port)
+- Add bsnes-jg core
+- Add Ship of Harkidian (Zelda Ocarina of Time port)
+- Add Vircon32
+- Add RAZE
 
 ### Fixes:
-    Fixed some missing bezels in new “DEFAULT” bezel sets
-    Libretro: stop generating a core input remap file when disable controller autoconfig is enabled
-    Lime3DS and Citra : fixed error when bezels are set to none
-    Tattoos : fixed wrong bezels when bezel file is not 96dpi and tattoos are activated
-    Fixed global disable controller autoconfigure feature not working
-    Fix some libretro n64 options
-    Fix a potential null call in citra generator
-    Fix issue with controller autoconfiguration in BigPemu
-    Try to map exit combo to Future Pinball (to test if this solves issue some are having to exit)
-    Change exit message to Cemu (to test if this solves issue some or having to exit)
-    Remove .m3u extension for 3do
-    OpenBor : fixes running .exe (when games do not have separate .pak files)
-    Fix exit of bigpemu, ares, bizhawk and jgenesis to ensure saves are made (replace kill process with proper closing)
+- Fixed some missing bezels in new "DEFAULT" bezel sets
+- Libretro: stop generating a core input remap file when disable controller autoconfig is enabled
+- Lime3DS and Citra : fixed error when bezels are set to none
+- Tattoos : fixed wrong bezels when bezel file is not 96dpi and tattoos are activated
+- Fixed global disable controller autoconfigure feature not working
+- Fix some libretro n64 options
+- Fix a potential null call in citra generator
+- Fix issue with controller autoconfiguration in BigPemu
+- Try to map exit combo to Future Pinball (to test if this solves issue some are having to exit)
+- Change exit message to Cemu (to test if this solves issue some or having to exit)
+- Remove .m3u extension for 3do
+- OpenBor : fixes running .exe (when games do not have separate .pak files)
+- Fix exit of bigpemu, ares, bizhawk and jgenesis to ensure saves are made (replace kill process with proper closing)
 
 ### Features:
-    Future Pinball : mapped exit to R3 (right stick press), can be used if select+start does not work
-    PCSX2: add decompression of zip & 7z
-    N64 : add a controller configuration profile that puts A & B according to xbox layout
-    Xenia Canary : add the resolution option (same as xenia)
-    Switch emulators & Cemu : add deadzone feature
-    Tattoos : added activation per system
-    MAME64 : add keyboard focus feature
-    Windows : added .gameexe ability also for .url (e.g. Steam games)
-    Add savestates to OpenMSX
-    Add simple .m3u compatibility to SSF (saturn)
-    Allow .bin extension for lr-melondsds to run dsi games
-    Add rewind option to lr-mame
-    Steam : add more solid / alternative way to find game executable to wait for (also for non-Steam games added through Steam)
-    Steam : RetroBat will automatically add -silent to shortcuts to prevent Steam to pop in front of game
-    Add use_gun option to cxbx/chihiro, this can be used to make the sinden bezel appear
-    Add savesstate manager to BigPemu (does not automatically load the save, but sets to the correct slot to load with hotkey)
-    Add SaveState Manager & hotkeys to Bizhawk
-    Add SaveState Manager & hotkeys to Flycast
-    Add SaveState Manager & hotkeys to JGenesis
-    Copy saves of ports to retrobat\saves (cgenius, sonic engines for now)
-    SNES9X : add gun options
-    model2 : add option to use shoulders to brake and accelerate instead of L2 and R2
-    Add feature for retroarch to select where to put patches for softmodding (near rom, in patch folder, in folder with rom name, or disable autoloading)
-    RPCS3 : add possibility to use variables at the beginning of the line in .m3u files (SAVESPATH, EMULATORPATH, ROMPATH), they will be replaced by the relevant path
-    mesen : add option to disable/enable softpatching autoload
-    RETROARCH : add option to set fast forward shortcut as “toggle” and to define speed
+- Future Pinball : mapped exit to R3 (right stick press), can be used if select+start does not work
+- PCSX2: add decompression of zip & 7z
+- N64 : add a controller configuration profile that puts A & B according to xbox layout
+- Xenia Canary : add the resolution option (same as xenia)
+- Switch emulators & Cemu : add deadzone feature
+- Tattoos : added activation per system
+- MAME64 : add keyboard focus feature
+- Windows : added .gameexe ability also for .url (e.g. Steam games)
+- Add savestates to OpenMSX
+- Add simple .m3u compatibility to SSF (saturn)
+- Allow .bin extension for lr-melondsds to run dsi games
+- Add rewind option to lr-mame
+- Steam : add more solid / alternative way to find game executable to wait for (also for non-Steam games added through Steam)
+- Steam : RetroBat will automatically add -silent to shortcuts to prevent Steam to pop in front of game
+- Add use_gun option to cxbx/chihiro, this can be used to make the sinden bezel appear
+- Add savesstate manager to BigPemu (does not automatically load the save, but sets to the correct slot to load with hotkey)
+- Add SaveState Manager & hotkeys to Bizhawk
+- Add SaveState Manager & hotkeys to Flycast
+- Add SaveState Manager & hotkeys to JGenesis
+- Copy saves of ports to retrobat\saves (cgenius, sonic engines for now)
+- SNES9X : add gun options
+- model2 : add option to use shoulders to brake and accelerate instead of L2 and R2
+- Add feature for retroarch to select where to put patches for softmodding (near rom, in patch folder, in folder with rom name, or disable autoloading)         WIKI
+- RPCS3 : add possibility to use variables at the beginning of the line in .m3u files (SAVESPATH, EMULATORPATH, ROMPATH), they will be replaced by the relevant path       WIKI
+- mesen : add option to disable/enable softpatching autoload
+- RETROARCH : add option to set fast forward shortcut as "toggle" and to define speed
 
-### Other stuff
-    add newtonSoftJson to better manage json files
-    add a 3-position switch and a slider preset for options
-    N64-style controllers – will now detect automatically the controllers known based on the json file only for specific guid, a switch must be activated for controllers sharing guid with non-N64-style controllers
-    Tattoos correct scaling in most cases
-    Add tattoos for atari lynx & neogeo pocket
-    Fix update not working (for next update)
-    Additional fbneo standalone control autoconfig
-    For megadrive & saturn: automapping of controllers from a file for genesis-like/saturn-like controllers (so far only 8BitDo M30 in bluetooth is added to the file)
-    Update Spain translation
+### Other stuff:
+- add newtonSoftJson to better manage json files
+- add a 3-position switch and a slider preset for options
+- N64-style controllers - will now detect automatically the controllers known based on the json file only for specific guid, a switch must be activated for controllers sharing guid with non-N64-style controllers
+- Tattoos correct scaling in most cases
+- Add tattoos for atari lynx & neogeo pocket
+- Fix update not working (for next update)
+- Additional fbneo standalone control autoconfig
+- For megadrive & saturn: automapping of controllers from a file for genesis-like/saturn-like controllers (so far only 8BitDo M30 in bluetooth is added to the file)
+- Update Spain translation
+</details>
+
+## RetroBat 6.3.1
+<details>
+
+### Emulators\cores:
+- Add mednafen standalone for segaSTV
+- add gb-msu system (to run SGB MSU games with libretro-bsnes)
+- Add Acorn Electron (MAME)
+- Add .cue extension to jaguar system
+- DOLPHIN TRIFORCE : Update to a version that allows entering test menu
+- Move RPCS3 dev_hdd0 folder to saves\ps3\rpcs3\hdd_0 (you need to cut/paste when upgrading, if you want to keep the current folder in emulator directory, delete saves\ps3\rpcs3\hdd_0 folder)
+- Move PPSSPP memstick folder to saves\psp (you need to cut/paste when upgrading)
+- Move CEMU mlc01 folder to saves\wiiu\cemu\mlc01 (you need to cut/paste when upgrading, if you want to keep the current folder in emulator directory, delete saves\wiiu\cemu\mlc01 folder)
+- Move XENIA and XENIA-CANARY content path to saves\xbox360\xenia (you need to cut/paste when upgrading, if you want to keep the current folder in emulator directory, delete saves\xbox360\xenia folder)
+- Move Ryujinx portable path to saves\switch\ryujinx (you need to cut/paste when upgrading, if you want to keep the current folder in emulator directory, delete saves\switch\ryujinx folder)
+- Move Vita3K content path to saves\psvita\vita3k as default(you can still use a custom path)
+- CEMU : add compatibility with CEMU 2.1
+
+### Fixes:
+- Fix teknoparrot games in gamesDB (uppercase) and add wheel games
+- Fix pcsx2 cheevos indexing
+- Caprice Forever : fix m3u management
+- Fix n64 controllers autoconfiguration when using NSO controller (for standalone emulators only)
+- Mednafen - enable loading from zip files (except for psx)
+- Fix DS3 controller mapping in RPCS3 (it will have pressure sensitivity if dshidmini driver is used)
+- Fix running lime3ds from retrobat menu
+- Fix 8BitDo Ultimate 2.4Ghz mapping in several emulators
+- Fix flycast extreme hunting missing start button
+- Fix Teknoparrot gdpr and licence prompt in latest version
+- Fix Mupen64 (RMG) launch of .ndd standalone titles
+- Fix Phoenix jaguar controller autoconfiguration
+
+### Features:
+- Retroarch: add custom relay server option in RetroBat
+- PCSX2 : add network option
+- PCSX2 : add options to map triggers to square and cross for driving games
+- PCSX2 : add option to use folder for memory cards
+- NDS : enhance bezels recognition based on screen layout
+- Vpinball : allow backglass when only 1 screen connected
+- XEMU : add Complex 1.03 as firmware option
+- Lime3DS & CITRA : write rom path in the emulator settings
+- MAME : add more cases of autoboot by reading hash files
+- RPCS3 : add input/output options
+- RPCS3 : add rumble feature
+- 3DS : add .m3u file to be able to run installed apps
+- XENIA-CANARY :  add framelimit feature
+- add .m3u support for amigacdtv and pc98
+- add .xbox360 extension to XENIA (same ways of working as .m3u)
+- DOLPHIN : add option to run wii menu
+- DOLPHIN : add lightgun specific per-game setting based on gamesdb.xml
+- DOLPHIN-TRIFORCE : map test menu to R3 instead of L3+R3
+- CEMU : add missing vsync options
+- lr-flycast : add naomi2 default mapping per game
+- Xenia-canary : add feature to turn on "apply patches"
+- Add preconfigured nvmem files for Flycast
+- Xenia : Add Xenia Manager to the RetroBat store ==> only this version will work well with RetroBat
+- Mednafen : add hotkeys/shortcuts
+
+### Other stuff:
+- Add some logs here and there
+- Add 4 types of bezels (default-curved, non-curved and night versions)
+- Add xbrz-5X retroarch shader choice from Retrobat
+- Cleaning of old XEMU code (ini file management)
+- Emulators will now propose update if available when ran from RetroBat menu
+- Retroarch : if no hotkey is set, hotkey actions will not be mapped by default
+- Add custom relay server option in netplay settings
+- Added controller tattoos (only for gb, gbc, gba, nds, 3ds, nes, snes, n64, gamecube, gamegear, mastersystem, megadrive, saturn, dreamcast, psp, ps1, ps2, pcengine, pcenginecd, supergrafx, pcfx, 3do, jaguar & jaguarcd for now)
+- Align all NES emulators controller configuration to the same layout per default and same layout options
+- Align all SNES emulators controller configuration to the same layout per default and same layout options
+- Align all Megadrive/Genesis emulators controller configuration to the same layout per default and same layout options
+- Align all Dreamcast emulators controller configuration to the same layout per default and same layout options
+- Align all Gamecube emulators controller configuration to the same layout per default and same layout options
+- Align all Mastersystem emulators controller configuration to the same layout per default and same layout options
+- Align all N64 emulators controller configuration to the same layout per default
+- Align all Saturn emulators controller configuration to the same layout per default and same layout options
+- Align all gamegear emulators controller configuration to the same layout per default
+- Align all GBA emulators controller configuration to the same layout per default
+- Align all Gameboy & Gameboy color emulators controller configuration to the same layout per default
+- Align all nintendo DS emulators controller configuration to the same layout per default
+- Align all 3DS emulators controller configuration to the same layout per default
+- Align all PCEngine, PCEngineCD, SuperGrafx and PC-FX emulators controller configuration to the same layout per default
+- Align all 3DO emulators controller configuration to the same layout per default
+- Align all Jaguar & jaguarCD emulators controller configuration to the same layout per default
+</details>
+
+## RetroBat 6.3
+<details>
+
+### Emulators\cores:
+- Update Hypseus SINGE and include FrameworkKimmy for latest games
+- Add OpenGOAL (Jak and Daxter 1 and 2 engine)
+- Add Caprice Forever for AMSTRAD CPC & GX4000
+- PPSSPP standalone is now the default for PSP
+- Bump MAME to 0.267b
+- Bump Retroarch to 1.19.1
+- Bump Raine to 0.96.9
+- Bump RPCS3 to 0.0.32-16617
+- Bump Mednafen to 1.32.1
+- Bump Vita3K to 0.2.0.3615
+- Bump Play! to 0.65
+- Bump Duckstation to 0.1.6937.0
+- Bump PCSX2 to 2.0.2
+- Bump Dolphin to 2407
+- Bump Mupen64 (RMG) to 0.6.5
+- Bump Xenia & Xenia-Canary
+- Bump Flycast to 2.3.2-157
+
+### Fixes:
+- Fix potential null pointer in libretro guns autoconfiguration
+- Fix EKA2L1 controller index assignment
+- XEMU : change closing hotkey to send CLOSE instead of taskkill : this should fix saves corruption issue
+- Lime3ds : add new executable name
+- PC-ENGINE : default to 2-button pad
+- libretro-Mupen64 : force vulkan when using parallel plugin
+- Few fixes of default settings values for libretro cores
+- RPCS3 : fix features for new version
+- MEDNAFEN : fix psx & saturn controller error
+- VPinball : fix -extminimized and -ini command lines not being passed to command line for new RC versions of VPinball
+- Dolphin : change exit combo to send CLOSE instead of KILL - might fix wiimote disconnection issues some people had
+- MAME & FBNEO : if game is vertical and no specific bezel is set, RetroBat will default to vertical arcade bezel
+- CAP32 : fix running dedicated COMMAND from .m3u file by deactivating autorun when a command is present
+- WINDOWS : .gameexe file to specify process to monitor does now work for any .lnk file
+
+### Features:
+- 3ds : Add bezels for side-by-side layout (also added capability to search for nds, but no bezel is yet available)
+- Libretro nes cores : add palette options
+- BigPEmu : set SDL as default input driver
+- Citra & Lime3DS : enable bezels
+- DOLPHIN: Add Retroachievements support (Gamecube & Wii)
+- Duckstation: add new shaders
+- HYPSEUS: management of .singe folders
+- JGenesis: Add nes zapper option
+- LR-FCEUMM & LR-MESEN: add turbo and core aspect ratio features
+- LR-FCEUMM: fix overscan option
+- Ryujinx : add option to force number of controllers that will be configured, this can avoid the gamepad screen to popup in Ryujinx (by default Retrobat was configuring as many players as the number of connected controllers)
+- Ryujinx : add network features
+- SINGE2: update ways of searching for .singe file and videofile
+- XEMU : add option to select cerbios flashrom (needs 'Cerbios.bin' in retrobat\bios folder)
+- NEC PC98 : add .cue extension
+- RAINE : add features & controller autoconfiguration
+- DOLPHIN : add aspect ratio setting for wii in sysconf
+- Play! : added few missing features
+- FBNEO : add games to autoconfiguration of controllers
+- PCSX2 : add per game memory card option
+- PCSX2 : add .m3u support (RetroBat will launch the file specified in first line of .m3u file)
+- Add squashfs support to some emulators (dolphin, citra, lime3ds, duckstation, bigpemu, ppsspp)
+- Add Retroarch turbo feature to few cores
+- MODEL 3 : add option to use L1 and R1 for racing games instead of triggers for people with arcade cabinets without triggers
+- CEMU : add button mapping to display Gamepad screen
+- PCSX2 and PSX : add option to change controller mapping and use L2 and R2 for driving games (useful for Gran Turismo)
+- SIMPLE64 : add selection of controller pak
+- XENIA & XENIA-CANARY : add some features and fixed a few that have changed with xenia update
+- FLYCAST : add network features in RetroBat menu
+
+### Other stuff:
+- Add animated bezels for RetroArch (only on few systems)
+- Add Retroshooters guns detection
+- Add MAME nvram preconfigured files
+- Add TEKNOPARROT lightgun games in lightgun collection
+- Add lowresNX scrapping capability (screenscraper)
+- French translations rework
+</details>
+
+## RetroBat 6.2.1
+<details>
+
+### Emulators\cores:
+- Add SINGE2 emulator for Daphne & ActionMax (SINGE games)
+- Jgenesis : use -cli executable instead of -gui
+- Updates : duckstation, Jgenesis
+
+### Fixes:
+- Fix "object reference not set to an instance of an object" error
+- Fix missing 'reminiscence' and 'devilutionx' rom folders
+- Fix RetroArch 'video_swap_interval' default value (was 1 instead of 0)
+- Delete ps3.keys (was assigning R1 button to middle mouse)
+- Fix TI99/4a information (year + name)
+- Fix duckstation internal postprocessing filter options
+- Fix PCSX2 mouse cursor (enable the option to set crosshairs to NONE)
+- Fix missing END in hypinput.ini
+- Fix .png extension for pico8 with retroarch
+
+### Features:
+- Renaming and reorganization of features for Mednafen
+- Citra/Lime3DS : Add screen layouts + texture filter feature
+- Add -outputs=win command line option to supermodel (for mamehooker)
+- FBNEO : add on option to use alternative gamepad indexes if a dolphinbar is connected
+- FBNEO : if controls mapping is not found for a rom in fbneo.yml, search the parent rom
+- DUCKSTATION : add option to force BIOS to use
+- BIGPEMU : add controller autoconfiguration (based on dinput)
+- SUPERMODEL : add possibility to run in borderless window instead of fullscreen (can be useful for lightgun games)
+
+### Other:
+- Add casio loopy to screenscraper
+- Maj WIKI (teknoparrot + new features)
+- Align shortcut for MESEN & Ares to take screenshots to hotkey + R3
+- Updated WIKI for symbian games
+- Align hotkey + R3 for screenshots in some emulators
+</details>
+
+## RetroBat 6.2
+<details>
+
+### Emulators\cores:
+- Add sudachi & suyu support
+- Add Lime3ds support for 3ds
+- Add DevolitionX (diablo engine)
+- Add Sonic 3 AIR, sonic-mania and sonic retro (Sonic, Sonic 2 and Sonic CD) engines
+- Add pocketCDG libretro core for Karaoke system (needs mp3 + CDG files)
+- Add VC4000 system (MAME)
+- Add casio loopy (MAME) (requires bios casloopy.zip)
+- Add Aamber pegasus (MAME) (requires bios pegasus.zip)
+- Update flycast to v2.3
+- Update Ares to version 137
+- Add Demul for cave system
+- Add symbian games for EKA2L1 (games in .sis format need to be installed first in emulator
+- Add reminiscence (flashback port) - necessitates game files
+- Add Mesen for Master System, PC-Engine and Supergrafx
+- Add jgenesis multi-emulator (nes, snes, gb, gbc, mastersystem, gamegear, megadrive, segacd)
+- Update BigPemu, Cemu, Flycast & RPCS3
+
+### Fixes:
+- Disable "rewind" feature with ppsspp libretro core ==> the feature is incompatible and was generating black screen on many games
+- Fix libretro-ppsspp language feature
+- Fix FPinball features
+- Fix Cemu and Ryujinx autoconfig for new XBOX controllers with updated firmware
+- Fix Mame64 controller index autoconfiguration
+- Fix openBor custom version exit error message
+- Fix Mame2016 corrupted cheat.zip file
+- Fix Dolphin borderless fullscreen being always overwritten
+- Update MAME hash files with 0.264 files
+- Fix citra controllers autoconfiguration
+- Add option to disable controller auto-configuration to demul-old
+- Switch : fix handheld mode
+- lr-opera : fix BIOS selection
+- lr-swanstation : fix ratio setting
+- libretro-fbneo : fix overclock feature
+- MAME : do not delete default.cfg anymore
+- Fix keyboard auto-configuration for Mesen standalone
+- RPCS3 : align features with latest version from 04/05/2024
+
+### Features:
+- lr-citra : add "virtual SD card" and option to disable hardware renderer
+- lr-ppsspp : remove deprecated features
+- Add Chihiro CXBX features
+- Add pad2key to VPinball
+- RPCS3 add option to force SDL driver for Xinput controllers
+- Add shaders to Ares
+- Cemu : Add option to use XInput api for XInput controllers
+- Add ports options for MAME/MESS computers (mostly joysticks)
+- Add new games to FBNEO standalone autoconfiguration (still many to add !)
+- Add possibility to create a .gameexe file next to a windows shortcut (in windows games) to specify the game executable RetroBat should check before returning to ES
+- Add possibility to create a .uwp file next to a windows shortcut to precise the name of the UWP App that is launched with the shortcut and let RetroBat find the right executable to monitor
+- Add custom resolutions to ryujinx (0.5 and 0.Cool
+- MESS systems : Add ability to add a boot command in a .autorun file (must be placed near the game rom file with the same name)
+- DOLPHIN : add option to disable Gamecube controller when using real wiimotes (fixes control issues for games such as Goldeneye 007)
+- MAME: add -output option (windows or network)
+- Add choice of device for EKA2L1
+- OpenBOR : add possibility to run specific versions that have a different executable name than openbor.exe
+- PSXMAME - add analog to dpad option
+- Add .zip and .7z extensions to BigPEMu, Bizhawk, Dolphin, Duckstation, Jynx, Mednafen and PPSSPP
+- Add features to libretro pce, pcecd and pcfx cores (6-button pad + disable sprite limit)
+- Add Retroachievements to Flycast standalone
+- Add video driver option for BigPEmu
+
+### Other:
+- Enable disk spanning for installer
+- Add option to install dependencies in RetroBat installer
+</details>
+
+## RetroBat 6.1
+<details>
+
+### Emulators/cores/systems:
+- Add Othello multivision (with gearsystem)
+- Add nokia ngage with eka2l1
+- Add PSXMame for ZINC games
+- Add Ikemen-GO
+- Add gemRB engine (open-source implementation of Infinity Engine for Baldur's Gate type games)
+- Add standalone fbneo emulator for fbneo system
+- Add ability to run custom OpenBOR build (using rom filename & specific core option) : configuration is NOT automated with custom versions
+- VPinball : compatibility with version 10.8
+- Update Supermodel version
+- Magic Engine can now be downloaded from RetroBat (you still need to purchase a key to get full functionality, RetroBat does not provide it)
+- Bump RetroArch to 1.17
+
+### Features:
+- [WHEELS] First implementation : model2, model3, pcsx2, flycast (dreamcast) (currently supported wheels : Logitech G29 and experimental: G920, driving force GT and G923, Thrustmaster T300RS (gearstik only in model2 and model3))
+- [CONTROLS] Magic Engine controllers autoconfiguration
+- [CONTROLS] Add xinput driver option for MAME autoconfiguration with correct joystick orders
+- [CONTROLS] Add logic to search per-game MAME cfg files first in saves\mame\ctrlr then in bios\mame\ctrlr when using "per-game" controller profile option
+- [CONTROLS] Add option to use left analog joystick instead of dpad in SNES9X
+- [CONTROLS] Add option to disable MOUSE in libretro:mame
+- [CONTROLS] Dolphin : add management of Gamecube adapters from Raphnet and Mayflash (you need to connect gc pads in reverse order on mayflash (4 for player 1, etc.)
+- [CONTROLS] Add autoconfiguration of N64 controller from Nintendo online shop for Ares, Bizhawk, Simple64 and Rosalie's Mupen64
+- [CONTROLS] Add autoconfiguration of N64 adapters from Raphnet & Mayflash for Ares, Bizhawk, Retroarch, Simple64 and Rosalie's Mupen64
+- [CONTROLS] Cemu : add wiimote horizontal controller profile
+- [CONTROLS] Add gun option to libretro mame, mame2003_plus and mame2016 cores
+- [CONTROLS] Enable raw input driver in Retroarch if use_gun is set and multiple gun devices are connected
+- [CONTROLS] RetroArch & Flycast standalone: add individual game controller configuration for all arcade games and ability for user to manage through a file                   WIKI
+- [CONTROLS] Add profile for lightgun for wii games with dolphin
+- [FEATURES] MAME : add setting skip_warnings to 1 in ui.ini file
+- [FEATURES] Add desktop resolution option to Teknopparot and Demul
+- [FEATURES] Add .chd extension for PSP system
+- [FEATURES] Add libretro-desmume features
+- [FEATURES] Add .chd extension to amigacdtv
+- [FEATURES] Add ability to run gemdos hdd images with hatarib core (using m3u and .GEM file)
+- [FEATURES] Add crosshair feature for model2
+- [FEATURES] Add 2 features in Vita3K emulator
+- [FEATURES] Add Technicolor shader in RetroArch
+- [FEATURES] Add features fo fbalpha, mame non-current cores.
+- [FEATURES] Add "-output windows" option for MAME standalone (used for mamehooks)
+- [FEATURES] Future Pinball : added camera type feature
+- [FEATURES] Supermodel : add supersampling (needs a beefy gpu !)
+- [FEATURES] Vita3k : enhancement with pref-path management, if setting your own emulator content path, RetroBat will use it, else it will use the emulator path
+- [FEATURES] Retroarch : add support for new mitm-session argument (netplay)
+- [FEATURES] Flycast (standalone) add option to use R1 and L1 instead of triggers
+- [UPDATES] Update bios\PPSSPP assets for libretro-PPSSPP core
+- [UPDATES] Update BIOS lookup and bios selection for PCSX2 (both standalone & libretro core) : bios must be placed in bios\pcsx2\bios and the list has changed
+- [UPDATES] Update BIOS lookup for psx bios (default RetroBat is now psxonpsp660.bin)
+- [UPDATES] Remove unnecessary file formats for MUGEN system
+
+### Fixes:
+- fix some features not correctly working in libretro ppsspp (e.g. anisotropic filtering)
+- fix exit of chihiro / cxbx
+- Vpinball & fpinball : fix .zip management
+- fix screenshots being deleted on game exit
+- fix controllers not autoconfigured with new versions of ryujinx & CEMU (ensure GUID calculation can match SDL 2.30 version with manufacturer name)
+- Fix dolphin savestates combo with non-xinput controllers
+- Fix MAME exit combo
+- Fix model2 exit combo not saving NVRAM
+- Fix supracan md5 bios check
+- Fix mono-gun games in retroarch settings when multiple guns are connected
+- disable teknoparrot update search when running from RetroBat
+- Fix bios checking engine that did not work when the path contains twice /bios
+- Remove obsolete aspect ratios for mame standalone (as these are only used in -window mode)
+- Fix screen size for hypseus on high-resolution displays
+- Fix shaders when using OpenGL driver on libretro cores that force glcore (use slang shader instead of glsl for these cores), also added ability to specify different glsl and slang shaders for a single RetroBat preset
+- Fix PPSSPP standalone autoconfiguration of controllers for non-xinput devices (attention, PPSSPP has a bug that prevents non-Xinput controllers to work when a XInput controller is connected)
+- Fix zinc start failing if controller does not have a required button
+- cemu : allow gamepad button inversion also for non-xinput controllers
+- Remove default colorization of GameBoy games with libretro:gambatte
+- Fix launch of Dolphin Triforce emulator from RetroBat menu not working
+- Fix one feature value not available anymore in new Ryujinx Avalonia UI
+- Fix pcsx2 cheats path that had too many subpaths ('cheats\pcsx2\cheats\cheats' now is 'cheats\pcsx2\cheats')
+- Fix XEMU not launching in fullscreen in some cases
+- fix duplicate features naming (e.g. beetle_psx_hw video renderer)
+- Fix retroarch 'custom' aspect ratio not applying
+- Fix Mednafen standalone controller configuration (emulator is using dinput)
+- Remove unnecessary extensions for MUGEN
+- Vita3k no detection of .m3u file in some cases
+
+### Interface:
+- Fix issue of disconnection of gamepad in RetroBat interface when trying to affect controllers to users and having multiple controllers of the same type
+- Fix network icon not being removed when choosing the option to hide it
+- Fix display of gametime when duration is between 24 and 25 hours
+
+### Dev stuff:
+- Add method to get new SDL 2.30 guid value (with CRC) (still in progress, not fully functional)
+- disable check for sinden FilterGraphWindow (camera activity) when searching for connected SindenLightguns
+- Move core/system specific remaps to remap files instead of retroarch global mapping
+- Add method to be able to manage in future game-specific options in scummvm (disabled for now)
+
+### Project:
+- New retrobat notice document
+</details>
+
+## RetroBat 6
+<details>
+
+### Dev stuff:
+- Move RetroBat repositories to the project official github : https://github.com/RetroBat-Official ==> you can now create issues and we will follow and answer
+- Move to new Screenscraper api and increase scraping speed
+- Improve eboot.bin search in .ps3 folders
+- Move RPCS3 controller configuration to SDL instead of WinMM
+- Search amigaforever in Program Files directory if not found in retrobat\emulators folder
+- Simplification of running steam games, no need for batch files anymore
+- Add management of Microsoft gamepass games (needs a small trick to work)
+- New RetroBat installer
+- Prepare class for wheel detection (for future)
+- Remove usage of .cmd file for ZaccariaPinball and PinballFX3 - now fully managed via EmulatorLauncher
+- Prepare functionality to manage savestates for more standalone emulators (for future)
+- Update Reshade
+- code cleaning & refactoring
+- New logo
+
+### Fixes:
+- Fix Retroachievements error
+- Fix controller injection in supermodel and yuzu
+- Fix hotkeys injection for pcsx2, dolphin, duckstation and mesen
+- Fix camputers lynx autoboot command not working for libretro:mame (has been removed, command must be typed manually, refer to wiki)
+- Fix features not appearing for some MESS systems
+- Alignment of hotkeys for some emulators (refer to wiki)
+- Fix Gamecube controller mapping for wii games supporting GC controller
+- Fix using "Guide" button (PS on playstation controllers, Xbox button or Home on NINTENDO) as hotkey on rpcs3, pcsx2 and duckstation
+- Fix CEMU & Dolphin vsync feature
+- Citra & xemu : fix screenshotpath
+- Fix Handheld mode on yuzu
+- Fix some controller mapping on Dolphin
+- Fix px68k cpu speed feature
+- fix beetle_psx analog/digital switch messing with hotkey
+- Fix fbneo neogeo_mode value injection
+- Fix Retroarch hard sync option
+- Fix pcsx2 & duckstation when playing with more than 4 players with only xinput controllers
+- Fix libretro:mame autodetection of vertical games
+- Tentative to fix XInput controllers order
+- Aligned tos folder between libretro:hatari and hatari
+- Fix Teknoparrot regression with newer TP version (gameprofiles issue)
+- Fix crashes happening with incorrect bezel image
+- Fix emulator download issue when emulator folder does not exist
+
+### Interface:
+- Many fixes (memory leaks, crashes, performance issues) : overall the fluidity and performance of the interface should increase
+- Add new views in EmulationStation interface and ability to use post-processing shaders in themes (included already some effects in Carbon theme)
+- Add possibility to use video splashscreen in EmulationStation
+- Fix missing "hardware" tag for Switch console
+- Fix year tag for WiiU was 2010 instead of 2012)
+- Clean up bios check for numerous systems
+- Aligned names for some features
+
+### Guns:
+- Fix gun support in multiple emulators (PCSX2, RPCS3, Flycast, Duckstation, SuperModel) & libretro:cores
+- Added menu to manage gun options
+- Add detection of Gun4IR guns in RetroBat
+- Fix sinden lightgun border when width has decimals
+- Add crosshair option to pcsx_rearmed
+
+
+### New emulators / cores :
+- Add Ares & Bizhawk for multiple systems
+- Add Mupen64 (Rosalie's) and Simple64 standalone emulators (n64 and n64dd)
+- Add Flycast (Dreamcast, naomi & Atomiswave)
+- Add melonDS standalone (NDS)
+- Add citra-canary (3DS)
+- Add Namco 2x6 with Play emulator (also added on PS2)
+- Add Zinc (Arcade)
+- Add SSF (Saturn)
+- Add Stella
+- Add ruffle (flash)
+- Add HBMame standalone (homebrew arcade)
+- Add ZEsarUX (ZX Spectrum)
+- Add arduous (arduboy)
+- Add uzem (uzebox)
+- Add libretro MelonDS DS
+- Add lowresNX
+- Add jynx (Camputers lynx)
+- Add hatari standalone (atariST)
+- Add Magic Engine (PCEngine & SuperGrafx)
+- Add pcsx2 libretro core support
+- Add libretro:hatarib core
+- Add PinballFX, Pinball M & PinballFX2 support (steam versions & standalone)
+- Add libretro:dinothawr
+- Add libretro:xRick (Rick Dangerous)
+- Add libretro:openlara (Tomb Raider port)
+- Add gong libretro port
+- Add fake08 (PICO8)
+- Add Super Bros War (libretro port of Super Mario War)
+- Add vitaquake2
+- Add ecwolf (Wolfenstein 3D)
+- Add libretro:boom3 (Doom 3)
+- Add eduke32
+- Add GZDoom
+- Add The Force Engine (Dark Forces)
+- Add SEGA S-TV with libretro:kronos
+- Remove 4DO core
+
+### Core system scope increases:
+- MAME64 for AppleII & AppleIIGS system (additional BIOS required)
+- Add mgba for gb, gbc and sgbAdd libretro:sameboy core for gb and gbc, allowing multiplayer with different cartridges (e.g. pokemon)
+- Add mednafen for wswan, saturn, psx, lynx, gb, gba, sgb, ngp, ngpc, gamegear, pcfx and mastersystem
+- Add mesen to snes, gb, gbc and sgb
+- Add libretro:sameboy core for gb and gbc, allowing multiplayer with different cartridges (e.g. pokemon)
+
+### Core/emulator updates:
+- Update RetroArch to 1.16 (including core updates)
+- Update most standalone emulators to newer versions (BigPEmu, Dolphin, Dolphin-Triforce, Cemu, Citra, CXBX, Xemu, Xenia, PCSX2, Duckstation, RPCS3, Vita3K, PPSSPP, mGBA, Mesen, Hypseus, Mame64, Future Pinball, VPinball, SNES9x, OpenMSX, ScummVM, ...)
+
+### Features:
+- Add Mega-bezels : sonkun, cyberlab, Duimon updated & koko-aio
+- Add audio features to dolphin
+- Add Apple2 controller type for MAME
+- Add deekay palette to vice cores
+- Add multi-disc (2 discs) management to AppleIIGS and apple2
+- Add features for snes9x
+- Add preemptive frames feature for supported cores
+- Add RPCS3 features (CPU Blit, trophies, guns)
+- Add features to PCSX2 : start in PS2 bios, choice of USB port for guncon
+- Move xenia and xenia-canary saves folder to retrobat\saves\xbox360 folder
+- Add .zip extension to psp (libretro)
+- Add .woz extension for apple2gs & apple2
+- Add dolphin post-processing filter option
+- Add bezels and shader for solarus, redream, raine, mednafen
+- Add additional TATE mode to FBNEO and TATE mode to libretro:mame
+- Add features to PinballFX3 (nb of players, classic mode)
+- Yuzu: add ASTC recompression feature & controller applet deactivation & option to disable fully retrobat settings injection
+- Dolphin: add vertex rounding feature
+- libretro_mednafen_psx_hw : add overclock feature
+- mednafen standalone controller autoconfiguration & features
+- Add MAME standalone controller configuration
+- mesen controller autoconfiguration
+- Demul controller autoconfiguration
+- SNES9X controller autoconfiguration
+- Hypseus controller autoconfiguration
+- Kega-Fusion controller autoconfiguration
+- Phoenix controller autoconfiguration
+- Add redream features + controller autoconfiguration
+- Add controller type choice to ryujinx (joycon, handheld, pro controller…)
+- Controller autoconfiguration for CXBX
+- PPSSPP standalone emulator controller autoconfiguration
+- Add reshade to duckstation
+- Add shader "sindenborder" for standalone controllers using reshade
+- Add controller button inversion features for dolphin (core & standalone)
+- Add features for m2emulator
+- libretro:mame - add padtokey buttons to access to mame menu and to service menu
+- Add automation of high scores for libretro:mame and mame64
+- Add .prg extension for C64
+- Add Xenia features for Forza Motorsport 4
+- Add bezels to Xemu
+- Add Duimon MBZ shaders to Bigpemu
+- Add possibility to run dsi nand (.bin) files with MelonDS (multiple nand images can be managed)
+- Add retroarch video filters
+- Add retroachievements to PPSSPP standalone
+- Add motion to simulate Wii movements for controllers with motion (Dualshock / Switch Pro)
+- Add .ipf file support for AMIGA (you need to add the "capsimg.dll" file)
+- Added management of .url game shortcuts for EPIC Game Launcher and Amazon Launcher (meaning RetroBat will find out the executable name and wait for it to close)
+- Add savestates management in interface for some standalone emulators (dolphin, pcsx2, ppsspp, duckstation)
+- Add some libretro hatari & hatarib features
+- Add PGXP feature for compatible psx cores/emulators
+- Use MAME bezels for FBNEO when mame bezel-project is installed
+</details>
+
+## RetroBat 5.3
+<details>
+
+### Fixes
+– Fix ryujinx feature injection
+– Fix mame standalone ratio not working (disable keepaspectratio when ratio forced in features)
+– Fix artwork path for mame standalone to align with libretro:mame path
+– Fix bezels for libretro:dolphin wii system and put libretro:dolphin in 16/9 aspect ratio by default (for wii only)
+– Fix BigPemu template to avoid error message when running jaguarcd titles for the first time
+– Fix FBNEO hardcore retroachievements mode by disabling « allow-patched-roms » when hardcore is enabled
+– Fix dolphin gamepad button inversion missing for X and Y (only A & B were reversed)
+– Fix once and for all pcsx2 multiple screen…(cross-fingers)
+– Fix use of Gamecube adapter for dolphin standalone
+– Fix missing features for demul-old (user for gaelco)
+– set default settings in retrobat.ini in case of invalid or null value
+– Align dolphin HD texture pack with libretro:dolphin, this means the custom texture packs must be placed in \saves\gamecube\User\Load\Textures
+– Fix libretro:mame per-game button remap naming
+– Fix usage of .uae files for WinUAE
+– Align Citra-QT sdmc and nand path with libretro:citra path
+– Fix Bios check for atomiswave
+– Fix vita3k vsync feature
+– Fix missing CXBX language feature (same as XEMU)
+– Fix missing .m3u extension for Sega-CD
+
+### Interface
+– fix canonball system in ES system list (avoid duplicating « Ports » category)
+– Fix game video in grid mode too small when in gamelist
+– Fix HFSDB scraping delay issue
+– Fix music volume issue after screensaver when volume set to 0
+– Rename « Game focus » feature to « Keyboard focus » and make it available only for computer cores
+– smooth transition from splashscreen to the interface
+– Add preview images in RetroBat download store
+– Hide console when running MAME and Ryujinx
+
+### Updates of emulators\cores
+– Bump duckstation (and addition of RetroAchievements)
+– Add mgba for gb, gbc and sgb
+– Add WinUAE also for amigacdtv
+– Bump libretro:ppsspp
+– Bump libretro:vice_xpet
+– Bump ppsspp emulator
+– Add OpenMSX for MSX & colecovision (with support of SGM roms for colecovision and MSX laserdiscs)
+– Add Zaccaria Pinball (steam only)
+
+### New misc stuff
+– Add MSX turbo R system in MSX group
+– Add GP32 to MESS systems
+– Add gun support (1 player only) for pcsx2 and duckstation – compatible with guns that emulate mouse (e.g. wiimotes)
+– Add features for BBC Micro to select Joystick type (mame & libretro:mame)
+– Add features for TI99 (speech module and 32k ram) (mame & libretro:mame)
+– Add possibility for FmTowns to load a floppy in addition to a cdrom
+– Add ramsize feature for fmtowns (mame & libretro:mame)
+– Add -multimouse command line feature for mame standalone
+– Add option to play with more than 2 players in nosgba (3 and 4 players)
+– Added values injected in rpcs3 (exit emulator when game finishes + prevent display sleep when playing)
+– Add archimedes bios check & missing models
+– Add StOoz zone & disable fullscreen features to Teknoparrot
+– Actionmax is now a separate system (not integrated with Daphne anymore)
+– Add feature to enable discord integration (for compatible systems)
+– Add automatic controller configuration mechanism in RetroBat interface if controller is known in SDL database (NOTE! ==> this will delete your personal controller configuration in RetroBat)
+– Add mgba features
+– Add features to ryujinx and yuzu (docked mode, language…)
+– Add language feature to RPCS3
+– Add touchscreen pointer option for libretro:citra
+– Add padtokey to mugen
+– Add m3u multi-disk support to GSPlus (Apple2GS)
+
+### Dev stuff
+– RetroBat.exe cleanup and enhancements
+– Cleanup es_padtokey file
+– Refactorization of yuzu options injection
+– Review of language detection for some standalone emulators
+– Changed method of searching EBOOT.BIN file for ps3 games
+</details>
+
+## RetroBat 5.2
+<details>
+
+### Fixes
+- Fixed A and B (south and east) button inversion when configuring a controller in EmulationStation
+- Fixed OpenBOR controls injection
+- Fix .tzx extension for ZXSpectrum (was incorrectly set in es_systems file)
+- Fix duckstation memcards path setting (path was duplicated)
+- Fix Retroarch device type injection using remaps (might consequently fix some device type injection for RetroArch cores)
+- Fix snes9x features (audio interpolation values were wrong)
+- Fix yuzu renderer selection (was always forced to vulkan)
+- Fix yuzu motion not working
+- Fix XEMU dvd_path issue for newer versions
+- Fix RetroAchievements popups not displaying in first beta version
+- Fix monitor index / bezels for pcsx2-QT (tentative, might not be completely solved yet)
+- Fix missing 'disableautocontrollers' option for Supermodel (model3)
+- Removed non-working .zip & .7z extensions from gba2players system
+- Fix NEOCD default BIOS (CD-Z instead of UNIVERSE BIOS), improves load speed
+- Fix cemu controllers (added feature to select controller type for player 1 and 2 as some games accept only 1 gamepad and some others require only pro controllers), also added options to use Real Wiimotes (with dolphinbar)
+
+### Additional cores, emulators, systems
+- jaguarCD with BigPEmu
+- Commodore PET (vice_xpet)
+- Commodore CPlus/4 (vice_xplus4)
+- Cannonball (outrun libretro port)
+- wasm-4 (fantasy console)
+- Atari XE Game System (mame - mess)
+- Coleco Adam (mame- mess)
+- Acorn Archimedes (mame - mess)
+- Acrorn ATOM (mame - mess)
+- emuscv core for scv system
+- NO$GBA for GBA system
+- libretro:parallel_n64 added to n64dd system (compatible with .ndd full NDD games only, not extensions)
+- bump mame to 0.253
+- bump rpcs3
+- bump scummvm (standalone & core)
+
+### Features
+- Add features for following emulators : nosgba, RPCS3, PCSX2 (resolutions & precaching of custom textures), Teknoparrot, xemu, yuzu, dolphin-triforce, dolphin, xenia (language), scummvm, cemu (controllers), mame standalone, bigpemu
+- Add features for following cores : pokemini, picodrive, ppsspp, prosystem, puae, potator, bsnes & bsnes_hd_beta, quasi88, prboom, px68k, craft, swanstation, mrboom, stella & stella2014, same_cdi, sameduck, RACE, 81, vecx, TGBDual, vice (all vice cores), tyrquake, desmume, melonds, opera, 4do, a5200, pcsx_rearmed, parallel_n64, mgba, atari800, crocoDS, citra, caprice32, bluemsx, desmume, desmume 2015, dosbox-pure, handy, mame2003
+- Added selection of softlist, media type and machine type for MESS systems (in libretro:mame and mame64)
+- Add feature in Yuzu, Ryujinx to invert face buttons to match XboX controller layout
+- Add custom textures feature for citra
+- Add option to rotate screen in FinalBurn cores and flycast (TATE mode)
+- Add option to select controller type in multiple cores (advanced settings>controls)
+
+### Miscellaneous
+- Dolphin Load/ResourcePacks paths moved to \bios\dolphin-emu instead of \emulators\dolphin\user
+- Inject hotkeys in pcsx2 & dolphin emulators
+- Controllers injection : better detection of controller index through activation of SDL HINTs
+- Added extensions : .chd (fmtowns), .hdf (AMIGA systems), .rpk (ti99), .dsk (coco), .nib (c64)
+- Daphne : no need to use Windows Developer mode anymore for Hypseus
+- Triforce : removed constant update check for those wanting to try latest triforce emulator
+- BIOS check: bump ps3 bios check to 4.90 version, added Color Computer bioses, added apple2gs bios
+- Add RETROBAT identification to default ambiance decorations pictures (bezels)
+- Updated RetroArch recordings folder to \retrobat\records
+- Improved bezel search logic (for game-specific bezels)
+- Updated systems logos in RetroBat system menu
+- New feature : turbo button (on FCEUMM core only for now)
+- MESS system grouping review
+- Correction of platforms in es_systems.cfg
+- add guns option to mesen core
+- New "cheats" folder for cheats (used for RetroArch and PCSX2) : \retrobat\cheats
+- Bump to dokan2 for XBOX iso mount
+- new pcsx2-qt.exe compatibility (for these who want to upgrade to latest nightly pcsx2.exe)
+- Added retroachievements sound customization
+</details>
+
+## RetroBat 5.1.1
+<details>
+
+### Fixes
+– PinballFX3 generator now launching directly tables
+– Fix crash when 2 identical controllers were connected
+– Fix cps1 and cps2 features mix-up
+– Fix unability to quit some emulators with HOTKEY + START because of game focus option automatically set to on
+– Fixed rpcs3 joystick axis inversion for XInput and Dualshocks
+– Fixed yuzu controller configuration to add possibility to choose joystick type
+– Fix some shaders not working with model2
+– fix RetroBat not displaying on second monitor issue
+– fix missing PCSX2 feature “skip bios”
+– fix ES navigation in vertical mode (L1 / R1 usage)
+
+### Additions
+– possibility to run pcsx2 in bigpicture mode
+– add cycle_exact feature for winuae
+– add actionmax support to daphne/Hypseus
+– add language selection for Wii
+
+### Miscelleneous
+– Some cleaning of unused code and typo errors corrections
+– Removed libretro:redream from Dreamcast emulators list
+– Removed no$GBA from GBA system
+</details>
+
+## RetroBat 5.1
+<details>
+
+### New system
+– PS Vita
+
+### New features
+– Xenia / Xenia-Canary (Xbox 360) (including controllers database for controller management)
+– Commodore 64
+– cemu (WiiU)
+– Swanstation (psx)
+– Supermodel (model3)
+– Dosbox
+– yuzu (switch)
+– ryujinx (switch)
+– picodrive (Sega)
+– citra (3DS)
+– dolphin (gamecube/Wii)
+– demul (Sega Arcade)
+– ScummVM
+– Retroachievements on cap32 (Amstrad)
+– Retroachievements on PS2 (with PCSX2-QT)
+– Add Game Focus feature for keyboard systems (disables RetroArch hotkeys to prevent interference with game control)
+– Add service menu feature for atomiswave (flycast core)
+– Better handling of controls for fuse core (ZXSpectrum)
+– Roland mt-32 now added to DosBox
+
+### Cores
+– same_cdi
+– Update prosystem core (atari 7800)
+
+### Standalone
+– Vita3K
+– PCSX2 updated to QT version
+– Phoenix for 3DO & Jaguar
+– BigPEmu for Jaguar
+– Oricutron reworked for RetroBat
+– Applewin reworked for RetroBat
+
+### Miscellaneous
+– updated BIOS checks (neoCD, same_cdi, scummvm (audio))
+– mame core usage for oric/atmos
+– Controller autoconfiguration for Dolphin, Yuzu, Ryujinx, RPCS3, Supermodel, Citra & PCSX2-QT
+– Addition of bezels & shaders with reshade for some standalone emulators (model2, Supermodel, BigPEmu, oricutron, daphne/Hypseus, Applewin, OpenBor, Mednafen, Simcoupe, GSPlus, ScummVM, Demul, Phoenix)
+– Bump SDL to 2.26 and major rework on the way controllers are handled (for better autoconfiguration in future releases)
+– New JSON library methods for better handling systems using json configuration file
+– scummvm (standalone + libretro) and DosBox pure now accessible from RetroBat menu
+– Correction & additions of mega-bezels
+– Multiple fixes:
+– pcsx2 paths
+– mesen fullscreen start
+– demul dreamcast game loading
+– m3u usage for dolphin standalone
+– 7zip games now working for netplay & retroachievements
+– Retroachievements sign for grouped systems in EmulationStation
+– FMTowns scraping
+– Xenia download & licence_mask fix
+– keyboard A & B inversion fix
+</details>
+
+## RetroBat 5
+<details>
+
+### New systems
+– Adventure Vision
+– amiga 4000
+– apfm1000
+– Arcadia 2001
+– Astrocade
+– BBC micro
+– Camputers Lynx
+– Philips CD-I
+– Color Computer
+– CreatiVision
+– FM 7
+– Gamate
+– Game.com
+– Game Pocket Computer
+– GameBoy Advance 2 players
+– Game Master
+– LCD Games
+– Megadrive-msu
+– Mega-Duck
+– Neo-Geo 64
+– PV-1000
+– Super Cassette Vision
+– Super Game Boy
+– Super A’Can
+– TI-99
+– Tomy Tutor
+– TV Games
+– VSmile
+
+### New features
+– New Retrobat integrated Updater & Emulators download/update functionnality
+– New content downloader
+– Add incremental savestate support
+– Add support for lightguns and Wiimote Guns, new lightgun games collection and removal of «*lightgun*» rom folder
+– Sinden Lightgun support
+– Duimon’s Mega-Bezel pack support
+– Support of zipped roms decompression
+– Add image viewer to Retrobat
+– Autodetection of best mame version when set to auto
+– XInput drivers for libretro
+– Add: support for Retroachievements “Challenge” indicator
+
+### Cores
+– a5200
+– fbalpha (current)
+– fceumm
+– gearcoleco
+– imageviewer
+– mame2000
+– mame2010
+– swanstation
+
+### Standalone
+– 3DSen (emulator not provided)
+– Hypseus (fork of Daphne)
+– no$gba (gba 2 players)
+– pcsx2 1.7 SSE4 and AVX2 versions
+– pcsx2 1.6 version moved to pcsx2-16 folder (pcsx2 folder used for 1.7 version)
+– PinballFX3 (through Steam integration)
+– ScummVM
+– Yuzu early access
+
+### Miscellenaous
+– moved all bioses to \bios folder and updated bios list md5 checks
+– Add new music theme
+– New version of Batgui.exe (not all functionalities have been ported yet)
+– Group system features into submenus in Retrobat advanced configuration menu
+– Option to invert A and B buttons
+– Removed arcade system, replaced with individual system folders
+– 64dd folder renamed n64dd
+– New SDL version
+– Additional features directly accessible from Retrobat to avoid setting
+up the features in the emulators (PS3, PS2, Yuzu, scummvm, dolphin, ….
+and many others)
+– New Website
+– New Wiki
+</details>
+
+## RetroBat 4.0.2
+<details>
+
+- fix missing logo for Nintendo 64DD in Carbon Theme
+- fix Supermodel.ini for Supermodel emulator (Model3) to use proper mapping for controllers
+- fix MAME standalone binary mispelling
+- add missing script to enable update detection
+- Add mame2016 Libretro core for Arcade systems
+- Add bsnes Libretro core for Sufami and GameBoy systems
+- Update BatGui
+- Bump RetroArch to v1.9.6
+- Update Libretro cores
+- Update Duckstation
+- Update Cemu
+- Update RPCS3
+</details>
+
+## RetroBat 4.0
+<details>
+
+### New Supported Systems
+- Apple II gs (Gsplus).
+- FM-Towns (Tsugaru & MAME64).
+- Oric Atmos (Oricutron).
+- Sharp X1 (Retroarch).
+- EasyRPG (Retroarch).
+- Tyrquake (Retroarch).
+- Tic80. (Retroarch).
+- Teknoparrot.
+- Flash Player. (Thanks to AureyoBoss)
+- Löve.
+- Pico8 (retro8 et pico8).
+- Add Supervision (Retroarch).
+- Add Channel-F (Retroarch).
+
+### New Features
+- Add a Gui 'BatGui' to facilitate the use of Retrobat.ini + other features. Thank to Reppa.
+- Redefining Controls
+- Random intro video.
+- Launch RetroBat automatically when Windows starts.
+- Activate / Deactivate controllers autoconfiguration be by system and not only globally.
+- Model2 / Model3: Reshader management (Supermodel & Model2emu).
+- Model2 / Model3: Add support for bezels (Supermodel & Model2emu).
+- Dolphin: Add support for bezels (Standalone).
+- FM-Towns: Add support for bezels (Tsugaru).
+- AppleII gs: Add support for bezels (Gsplus).
+- PS2: Add support for bezels. (PCSX2 Standalone).
+- Neo.Geo CD: Add support for shaders (Raine).
+- Neo.Geo: Add support for shaders (Raine).
+- New Save State "Slot" system integration in ES (Retroarch).
+- Automatic language detection for EmulationStation and Retroarch.
+- Add new options for NETPLAY.
+- Add background music. (*.mp3 & *.ogg)
+- Add DuckStation (Standalone) (Playstation)
+- Add Kodi multimedia Player.
+- Add Kega-Fusion emulator (Standalone)
+- Add MAME64 standalone.
+- Add support for RyujinX (Standalone) (Switch)
+- Add WINUAE standalone. (Amiga)
+- Add Dosbox Pure core (DOS) (Retroarch)
+- Add MESEN emulator (nes)
+- Add RetroAchievment integration
+- Add PADTOKEY function (A kind of Xpadder / JoyToKey integrated into ES)
+- Add XEMU emulator (Xbox)
+- Add a user manual directly accessible from Retrobat (ES)
+- New integrated RetroBat update system
+ 
+### New settings options on EmulationStation for:
+Cores :
+   atari800
+   citra (3ds)
+   dosbox pure (dos)
+   flycast (dreamcast, naomi, atomiswave)
+   gambatte (gameboy, gameboy color)
+   genesis plus gx (master system, megadrive, megacd)
+   genesis plus gx wide(screen) (master system, megadrive, megacd, 32x)
+   mame
+   mame2003 plus
+   mednafen psx hw (ps1)
+   pcsx rearmed (ps1)
+   mednafen saturn (saturn)
+   mesen (nes)
+   mupen64plus (n64)
+   pcsx rearmed (ps1)
+   potator (supervision)
+   ppsspp (psp)
+   picodrive (master system, megadrive, megacd, 32x)
+   snes9x (super nes, super nes msu 1)
+   fbneo (arcade, neogeo, neogeo cd)
+   kronos (saturn)
+   puae (amiga)
+
+Standalone :
+   raine (neogeo, neogeo cd)
+   pcsx2 (ps2)
+   dolphin (gamecube, wii, wad)
+   fpinball
+   vpinball
+   openbor
+   duckstation (ps1)
+   daphne (laserdisc)
+   supermodel (model3)
+
+### Misc
+- Standalone emulators updated.
+- Bump to RetroArch 1.9.5
+- The roms folder "n3ds" is now "3ds"
+- The "Model2" games must be in the "roms\model2" folder and not "roms\model2\roms"
+- Yuzu: Auto-fullscreen re-works on new versions of Yuzu.
+- Dolphin Standalone: Added missing buttons on auto-config (L & R).
+- Add support for ".ps3" files like on Batocera (experimental).
+- Cave Story: Add support for *.exe extension (Retroarch).
+- Several minor fixes.
+</details>
+
+## RetroBat 3.1
+<details>
+
+Compared to the latest stable release (RetroBat v2.1) :
+- 100+ supported consoles, handheld, arcade and computers systems.
+- RetroBat use Batocera ES build for Windows instead of EmulationStation FCAMOD.
+- A new setup GUI to download, install and configure EmulationStation, RetroArch and the standalone emulators.
+- Bump to RetroArch 1.8.9 SDL 2.0.12, compatibility with RetroArch ANGLE.
+- retrobat.exe: a new launcher for ES and a manager of the global settings (replace retro.bat scripts).
+- emulatorLauncher.exe: an advanced emulators launcher allowing integration of their features and options into the EmulationStation menu: RetroArch, RetroArch Angle, AppleWin, Cemu, Cxbx-Reloaded, Daphne, Demul, Dolphin, Dolphin WX, DOSBox, Future Pinball, M2Emulator, Mednafen, mGBA, OpenBor, PCSX2, PPSSPP, RPCS3, SimCoupé, Solarus, Supermodel and Visual Pinball are concerned.
+- Configure your controllers in EmulationStation and they will also be configured for all the emulators managed by emulatorLauncher. Close emulators easily with hotkeys.
+- Change video modes, screen ratio, decorations, shaders and more directly from the ES menu. You can apply this globally, per systems or per games.
+</details>
+
+## RetroBat 2.1
+<details>
+
+- RetroBat is now compatible with 64 bit AND 32 bit Windows x86 computers.
+- Bump RetroArch to 1.8.4.
+- Hotkeys are enabled in RetroArch configuration.
+- Added compatibility with Kodi.
+- Added compatibility with many standalone emulators: m2emulator (Model 2), cemu (Wii U), citra (3DS), Future Pinball, Mednafen (nes, snes, megadrive, pcengine, pcenginecd, playstation), mGBA (Game Boy Advance), Raine (Neo Geo CD), snes9x (Super NES) and Visual Pinball.
+- Added launchers for Visual Pinball and Future Pinball to make them portable (by Fabrice Caruso).
+- Added runcommand.exe module instead of batch scripts to launch emulators from RetroBat config menu in EmulationStation. Emulators command parameters can be modified in runcommand.ini. Runcommand.exe can read m3u files to launch Wii U and PS3 games.
+- Added compatibility with Theodore libretro core (Thomson computers) and Kronos (Saturn).
+- Added compatibility with Megadrive Steam Uncompressed ROMS with .68K extension.
+- Some bugs fixes.
+</details>
+
+## RetroBat 2
+<details>
+
+- Scripts were rewritten from scratch for more efficiency.
+- RetroBat Setup detect if EmulationStation, RetroArch, Libretro Cores and 7-Zip are installed and install  them automatically if needed.
+- RetroBat Launcher detect if setup directory has changed and run RetroBat Setup to fix it.
+- Install and update software separately.
+- Install and update themes for EmulationStation.
+- RetroBat Scripts can be updated in RetroBat Setup.
+- Debug options.
+- Launch video as introduction before EmulationStation. Use emulationstation.exe --video (vlc) instead of ffmpeg core.
+- Read settings from emulationstation.cfg to set ES resolution fullscreen or windowed.
+- Enable JoyToKey in emulationstation.cfg.
+- Enable video intro in emulationstation.cfg.
+- Add launcher for OpenBOR and RPCS3 (thank to Fabrice Caruso).
+- Add in ES systems list: OpenBOR, MUGEN, PS3, Apple II, Famicom Disk System and SG-1000.
+- Fixed some issues and bugs.
 </details>
