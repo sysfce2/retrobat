@@ -5,21 +5,28 @@
 		<name>Mr Boom</name>
 		<desc>Bomberman clone.</desc>
 		<image>./images/mrboom.png</image>
-        <marquee>./images/mrboom-marquee.png</marquee>
+		<marquee>./images/mrboom-marquee.png</marquee>
 	</game>
 	<game>
 		<path>./xrick.libretro</path>
 		<name>XRick</name>
 		<desc>Rick Dangerous clone.</desc>
 		<image>./images/xrick.png</image>
-        <marquee>./images/xrick-marquee.png</marquee>
+		<marquee>./images/xrick-marquee.png</marquee>
 	</game>
 	<game>
 		<path>./2048.libretro</path>
 		<name>2048</name>
 		<desc>2048 clone.</desc>
 		<image>./images/2048.png</image>
-        <marquee>./images/2048-marquee.png</marquee>
+		<marquee>./images/2048-marquee.png</marquee>
+		<lang>en</lang>
+	</game>
+	<game>
+		<path>./anarch.libretro</path>
+		<name>Anarch</name>
+		<desc>Extremely small, completely public domain, no-dependency, no-file, portable suckless anarcho-pacifist from-scratch 90s-style Doom clone that runs everywhere, made for the benefit of all living beings.</desc>
+		<image>./images/anarch.png</image>
 		<lang>en</lang>
 	</game>
 	<game>
@@ -27,15 +34,15 @@
 		<name>craft</name>
 		<desc>Minecraft clone.</desc>
 		<image>./images/craft.png</image>
-        <marquee>./images/craft-marquee.png</marquee>
+		<marquee>./images/craft-marquee.png</marquee>
 		<lang>en</lang>
 	</game>
 	<game>
 		<path>./gong.libretro</path>
 		<name>Gong</name>
-        <desc>Pong clone.</desc>
+		<desc>Pong clone.</desc>
 		<image>./images/gong.png</image>
-        <marquee>./images/gong-marquee.png</marquee>
+		<marquee>./images/gong-marquee.png</marquee>
 		<lang>en</lang>
 	</game>
 </gameList>

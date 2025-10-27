@@ -1178,7 +1178,7 @@
 ## RetroBat 5.3
 <details>
 
-### Fixes
+### Fixes:
 – Fix ryujinx feature injection
 – Fix mame standalone ratio not working (disable keepaspectratio when ratio forced in features)
 – Fix artwork path for mame standalone to align with libretro:mame path
@@ -1199,7 +1199,7 @@
 – Fix missing CXBX language feature (same as XEMU)
 – Fix missing .m3u extension for Sega-CD
 
-### Interface
+### Interface:
 – fix canonball system in ES system list (avoid duplicating « Ports » category)
 – Fix game video in grid mode too small when in gamelist
 – Fix HFSDB scraping delay issue
@@ -1209,7 +1209,7 @@
 – Add preview images in RetroBat download store
 – Hide console when running MAME and Ryujinx
 
-### Updates of emulators\cores
+### Updates of emulators\cores:
 – Bump duckstation (and addition of RetroAchievements)
 – Add mgba for gb, gbc and sgb
 – Add WinUAE also for amigacdtv
@@ -1219,7 +1219,7 @@
 – Add OpenMSX for MSX & colecovision (with support of SGM roms for colecovision and MSX laserdiscs)
 – Add Zaccaria Pinball (steam only)
 
-### New misc stuff
+### New misc stuff:
 – Add MSX turbo R system in MSX group
 – Add GP32 to MESS systems
 – Add gun support (1 player only) for pcsx2 and duckstation – compatible with guns that emulate mouse (e.g. wiimotes)
@@ -1242,7 +1242,7 @@
 – Add padtokey to mugen
 – Add m3u multi-disk support to GSPlus (Apple2GS)
 
-### Dev stuff
+### Dev stuff:
 – RetroBat.exe cleanup and enhancements
 – Cleanup es_padtokey file
 – Refactorization of yuzu options injection
@@ -1253,7 +1253,7 @@
 ## RetroBat 5.2
 <details>
 
-### Fixes
+### Fixes:
 - Fixed A and B (south and east) button inversion when configuring a controller in EmulationStation
 - Fixed OpenBOR controls injection
 - Fix .tzx extension for ZXSpectrum (was incorrectly set in es_systems file)
@@ -1270,7 +1270,7 @@
 - Fix NEOCD default BIOS (CD-Z instead of UNIVERSE BIOS), improves load speed
 - Fix cemu controllers (added feature to select controller type for player 1 and 2 as some games accept only 1 gamepad and some others require only pro controllers), also added options to use Real Wiimotes (with dolphinbar)
 
-### Additional cores, emulators, systems
+### Additional cores, emulators, systems:
 - jaguarCD with BigPEmu
 - Commodore PET (vice_xpet)
 - Commodore CPlus/4 (vice_xplus4)
@@ -1287,7 +1287,7 @@
 - bump rpcs3
 - bump scummvm (standalone & core)
 
-### Features
+### Features:
 - Add features for following emulators : nosgba, RPCS3, PCSX2 (resolutions & precaching of custom textures), Teknoparrot, xemu, yuzu, dolphin-triforce, dolphin, xenia (language), scummvm, cemu (controllers), mame standalone, bigpemu
 - Add features for following cores : pokemini, picodrive, ppsspp, prosystem, puae, potator, bsnes & bsnes_hd_beta, quasi88, prboom, px68k, craft, swanstation, mrboom, stella & stella2014, same_cdi, sameduck, RACE, 81, vecx, TGBDual, vice (all vice cores), tyrquake, desmume, melonds, opera, 4do, a5200, pcsx_rearmed, parallel_n64, mgba, atari800, crocoDS, citra, caprice32, bluemsx, desmume, desmume 2015, dosbox-pure, handy, mame2003
 - Added selection of softlist, media type and machine type for MESS systems (in libretro:mame and mame64)
@@ -1296,7 +1296,7 @@
 - Add option to rotate screen in FinalBurn cores and flycast (TATE mode)
 - Add option to select controller type in multiple cores (advanced settings>controls)
 
-### Miscellaneous
+### Miscellaneous:
 - Dolphin Load/ResourcePacks paths moved to \bios\dolphin-emu instead of \emulators\dolphin\user
 - Inject hotkeys in pcsx2 & dolphin emulators
 - Controllers injection : better detection of controller index through activation of SDL HINTs
@@ -1321,7 +1321,7 @@
 ## RetroBat 5.1.1
 <details>
 
-### Fixes
+### Fixes:
 – PinballFX3 generator now launching directly tables
 – Fix crash when 2 identical controllers were connected
 – Fix cps1 and cps2 features mix-up
@@ -1333,13 +1333,13 @@
 – fix missing PCSX2 feature “skip bios”
 – fix ES navigation in vertical mode (L1 / R1 usage)
 
-### Additions
+### Additions:
 – possibility to run pcsx2 in bigpicture mode
 – add cycle_exact feature for winuae
 – add actionmax support to daphne/Hypseus
 – add language selection for Wii
 
-### Miscelleneous
+### Miscelleneous:
 – Some cleaning of unused code and typo errors corrections
 – Removed libretro:redream from Dreamcast emulators list
 – Removed no$GBA from GBA system
@@ -1348,10 +1348,10 @@
 ## RetroBat 5.1
 <details>
 
-### New system
+### New system:
 – PS Vita
 
-### New features
+### New features:
 – Xenia / Xenia-Canary (Xbox 360) (including controllers database for controller management)
 – Commodore 64
 – cemu (WiiU)
@@ -1372,11 +1372,11 @@
 – Better handling of controls for fuse core (ZXSpectrum)
 – Roland mt-32 now added to DosBox
 
-### Cores
+### Cores:
 – same_cdi
 – Update prosystem core (atari 7800)
 
-### Standalone
+### Standalone:
 – Vita3K
 – PCSX2 updated to QT version
 – Phoenix for 3DO & Jaguar
@@ -1384,7 +1384,7 @@
 – Oricutron reworked for RetroBat
 – Applewin reworked for RetroBat
 
-### Miscellaneous
+### Miscellaneous:
 – updated BIOS checks (neoCD, same_cdi, scummvm (audio))
 – mame core usage for oric/atmos
 – Controller autoconfiguration for Dolphin, Yuzu, Ryujinx, RPCS3, Supermodel, Citra & PCSX2-QT
@@ -1408,7 +1408,7 @@
 ## RetroBat 5
 <details>
 
-### New systems
+### New systems:
 – Adventure Vision
 – amiga 4000
 – apfm1000
@@ -1438,7 +1438,7 @@
 – TV Games
 – VSmile
 
-### New features
+### New features:
 – New Retrobat integrated Updater & Emulators download/update functionnality
 – New content downloader
 – Add incremental savestate support
@@ -1451,7 +1451,7 @@
 – XInput drivers for libretro
 – Add: support for Retroachievements “Challenge” indicator
 
-### Cores
+### Cores:
 – a5200
 – fbalpha (current)
 – fceumm
@@ -1461,7 +1461,7 @@
 – mame2010
 – swanstation
 
-### Standalone
+### Standalone:
 – 3DSen (emulator not provided)
 – Hypseus (fork of Daphne)
 – no$gba (gba 2 players)
@@ -1471,7 +1471,7 @@
 – ScummVM
 – Yuzu early access
 
-### Miscellenaous
+### Miscellenaous:
 – moved all bioses to \bios folder and updated bios list md5 checks
 – Add new music theme
 – New version of Batgui.exe (not all functionalities have been ported yet)
@@ -1507,7 +1507,7 @@ and many others)
 ## RetroBat 4.0
 <details>
 
-### New Supported Systems
+### New Supported Systems:
 - Apple II gs (Gsplus).
 - FM-Towns (Tsugaru & MAME64).
 - Oric Atmos (Oricutron).
@@ -1522,7 +1522,7 @@ and many others)
 - Add Supervision (Retroarch).
 - Add Channel-F (Retroarch).
 
-### New Features
+### New Features:
 - Add a Gui 'BatGui' to facilitate the use of Retrobat.ini + other features. Thank to Reppa.
 - Redefining Controls
 - Random intro video.
@@ -1590,7 +1590,7 @@ Standalone :
    daphne (laserdisc)
    supermodel (model3)
 
-### Misc
+### Misc:
 - Standalone emulators updated.
 - Bump to RetroArch 1.9.5
 - The roms folder "n3ds" is now "3ds"

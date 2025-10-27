@@ -125,6 +125,9 @@
     <rename path="emulators\xenia\xenia.config.toml" to="emulators\xenia\xenia.config.toml.bak"/>
     <rename path="emulators\bizhawk\config.ini" to="emulators\bizhawk\config.ini.bak"/>
     <rename path="emulators\shadps4\user\config.toml" to="emulators\shadps4\user\config.toml.bak"/>
+    <rename path="roms\tyrquake" to="roms\quake"/>
+    <rename path="roms\vitaquake2" to="roms\quake2"/>
+    <rename path="emulators\ymir\Ymir.toml" to="emulators\ymir\Ymir.toml.bak"/>
   </actions>
   <actions version="7.3.2-stable-win64">
     <move path="tattoos" to="user\tattoos"/>
@@ -139,7 +142,6 @@
     <delete path="emulators\rpcs3\config.yml"/>
     <rename path="emulators\rpcs3\config\config.yml" to="emulators\rpcs3\config\config.yml.bak"/>
     <rename path="emulators\mesen\settings.json" to="emulators\mesen\settings.json.bak"/>
-    <rename path="emulators\ymir\Ymir.toml" to="emulators\ymir\Ymir.toml.bak"/>
     <rename path="emulators\azahar\user\config\qt-config.ini" to="emulators\azahar\user\config\qt-config.ini.bak"/>
   </actions>
   <actions version="7.3.2.1-stable-win64">
@@ -155,7 +157,6 @@
     <delete path="emulators\rpcs3\config.yml"/>
     <rename path="emulators\rpcs3\config\config.yml" to="emulators\rpcs3\config\config.yml.bak"/>
     <rename path="emulators\mesen\settings.json" to="emulators\mesen\settings.json.bak"/>
-    <rename path="emulators\ymir\Ymir.toml" to="emulators\ymir\Ymir.toml.bak"/>
     <rename path="emulators\azahar\user\config\qt-config.ini" to="emulators\azahar\user\config\qt-config.ini.bak"/>
   </actions>
   <actions version="7.2.0-stable-win64">
