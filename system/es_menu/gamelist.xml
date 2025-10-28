@@ -897,8 +897,25 @@
 		<path>./xenia_canary.menu</path>
 		<name>Xenia Canary (XBOX 360)</name>
 		<desc>Run Xenia Canary (Xbox 360).</desc>
-		<image>./media/xenia-logo.png</image>
-		<marquee>./media/xenia-logo.png</marquee>
+		<image>./media/xenia-canary-logo.png</image>
+		<marquee>./media/xenia-canary-logo.png</marquee>
+		<rating>0</rating>
+		<releasedate />
+		<developer>Xenia Team</developer>
+		<publisher>Xenia Team</publisher>
+		<genre>Emulator</genre>
+		<playcount />
+		<lastplayed />
+		<gametime />
+		<lang>en</lang>
+		<region>wr</region>
+	</game>
+	<game>
+		<path>./xenia_edge.menu</path>
+		<name>Xenia Edge (XBOX 360)</name>
+		<desc>Run Xenia Edge (Xbox 360).</desc>
+		<image>./media/xenia-edge-logo.png</image>
+		<marquee>./media/xenia-edge-logo.png</marquee>
 		<rating>0</rating>
 		<releasedate />
 		<developer>Xenia Team</developer>

@@ -275,6 +275,7 @@ emulators\xenia\config
 emulators\xenia-canary
 emulators\xenia-canary\config
 emulators\xenia-canary\patches
+emulators\xenia-edge
 emulators\yuzu
 emulators\yuzu\user
 emulators\yuzu\user\config
