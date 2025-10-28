@@ -16,6 +16,7 @@
 - Bump MAME (standalone & libretro) to 0.281
 - Bump melonDS
 - Bump mGBA
+- Bump Mupen64 (RMG)
 - Bump pcsx2
 - Bump PPSSPP
 - Bump shadps4
@@ -24,6 +25,14 @@
 - Bump Xemu
 - Bump Ymir
 - Add namco3xx with Teknoparrot
+- Add bstone (Blake Stone)
+- Add dosbox-pure (standalone)
+- Add dosbox-staging (standalone)
+- Add vkQuake (quake)
+- Add vkQuake2 (quake2)
+- Add Xash3D_fwgs (Half-Life)
+- Add xenia-edge (Xbox360)
+- Ryujinx can be upgraded to 1.3.3 (tested working)
 
 ### Fixes:
 - BIZHAWK: fix core selection for PCE and Gameboy
@@ -31,11 +40,14 @@
 - CONTROLLERS: fix Dualsense controller spamming when connected in bluetooth
 - EDUKE: send -j command by default if not specified in .eduke32 file
 - HBMAME: fix error on launch
+- LR-PX68K: clean up keropi\config file before launching a new game
 - MAME: fix an issue where START and SELECT were not assigned (standalone MAME)
 - MESEN: fix json config
+- MUGEN: fix resolution (can be changed using "video mode" setting
 - PCSX2: messages and notifications are now centered to not be hidden below bezels
 - RETROARCH: default video driver to 'gl' if user has set to auto
 - RETROARCH: try to fix case where all controllers are assigned to a single player with dinput controllers
+- SUPER'A'CAN: fix bios check
 - TEKNOPARROT: fix some buttons not mapped (particular extension buttons for few games)
 - TEKNOPARROT: when using wiimote as gun, allow setting buttons on another keyboard (e.g. Test and Service)
 - XROAR: fix "exec" command for coco
@@ -43,18 +55,27 @@
 ### Features:
 - BIZHAWK: add Microphone on L2 button for nds
 - CEMU: add toggle screen button
+- CEMU: add microphone options (use default computer device or map button to blow mic)
 - DOLPHIN: change mapping of wii gun setting to remove dual action of mouse middle click
 - DOLPHIN: add nunchuk shake on R2 button when using a profile of emulated wiimote with nunchuk
 - DOLPHIN: add option to define if R2/L2 for nunchuk simulates shake or swing
+- DOLPHIN: add setting to manage wiimote IR sensitivity
+- DOLPHIN: add some graphics settings
+- DOLPHIN: add .json extension to enable launch of games with Riivolution patches
+- DOLPHIN AND LR-DOLPHIN: add possibility to perform specific mapping of gamecube-like controllers from json file
+- DUCKSTATION: add emulation speed feature
 - FLYCAST: add possibility to define mappings for arcade layouts in yml file (8buttons, 8buttons variation and 6buttons)
 - LR-CAP32: add some options
 - LR-DOSBOX_PURE: add option to save per content when loading an OS
 - LR-GAMBATTE: add more palette options (with management of TWB64 and PixelShift)
+- LR-MELONDSDS: add flipped-hybrid screen layouts
 - LR-GENESIS_PLUS_GX: add some options
 - LR-MUPEN64: add some options
 - LR-NESTOPIA: add more flexible crop options
+- LR-NESTOPIA: remove nstdatabase from bios and bios-checker
 - LR-OPERA: add options
 - LR-MAME: add option to disable artworks located in saves\mame\artwork
+- LR-WASM4: add .zip extension
 - MAME: add additional games autoconfig
 - MAME and LR-MAME: RetroBat will now backup the .cfg files before overriding them (avoid loosing your self-made config !)
 - MAME and LR-MAME: Add bios selection for NEOGEO64 system
@@ -72,20 +93,32 @@
 - SNES9x: add few features (stretch, filters)
 - STEAM: if the option "scan non-installed games" is enabled and no api key is provided, try user public profile
 - SUPERMODEL: add possibility to manage game mappings in yml file, also add layout option (for arcade sticks)
+- SWITCH emulators: add option to sync nand, sdmc, load paths for yuzu forks (yuzu, suyu, citron, sudachi, eden)
 - VITA3K: if the game ID is missing in the gamefile name, RetroBat will still run vita3k without autoloading a game
 
 ### Other stuff:
+- Now using es_theme_carbon from RetroBat official github
+- Renamed tyrquake and vitaquake2 systems to quake and quake2, changed roms path to roms\quake and roms\quake2, add .quake and .quake2 extensions support
 - add mouse option to playstation emulators
 - DS4 and DUALSENSE CONTROLLERS: add option to enable SDL enhanced feature : when enabled - controller will not be compatible with emulators using directinput until you switch it off and on again
 - RETROARCH: do not override nor delete inputremap file when controller autoconfig is disabled and back it up when enabling autoconfig
 - Retrieve retroarch error from retroarch logs to display in RetroBat
 - Installer is now able to give the filesize before installing an emulator
+- RetroBat.exe: fix launch at startup
 - RetroBat.exe: fix error message when path has a space
 - RetroBat.exe: fix false positive when executable name has been changed
 - RetroBat.exe: warning if an instance of RetroBat is already running
 - RetroBat.exe: fix quick show of desktop by adding a blackscreen on top
 - RetroBat.exe: fix monitor where video and blackscreens are displayed
+- RetroBat.exe: added a FocusDelay setting in retrobat.ini to force to set EmulationStation in focus after xxxx milliseconds
+- RetroBat Installer: bump sharpziplib package (this should fix codepage 1 error)
+- RetroBat Installer: add option to install dokany (used to mount CXBX images when using CXBX as Xbox emulator)
+- RetroBat Installer: fix delay in showing installer page
+- RetroBat Installer: Add translations (polish, bulgarian, spanish, french, italian, german)
+- Updater now also updates retrobat.ini file
 - Input mapping: add few fbneo and MAME default input mappings
+- Added some helpers in the code
+- Added another guid of 8bitdo M30 to special controllers
 </details>
 
 ## RetroBat 7.4
