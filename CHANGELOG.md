@@ -33,6 +33,7 @@
 - Add Xash3D_fwgs (Half-Life)
 - Add xenia-edge (Xbox360)
 - Ryujinx can be upgraded to 1.3.3 (tested working)
+- Eden and citron can be updated respectively to 0.0.4-rc1 and 0.9.0
 
 ### Fixes:
 - BIZHAWK: fix core selection for PCE and Gameboy
