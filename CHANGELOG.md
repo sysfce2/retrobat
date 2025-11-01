@@ -19,7 +19,7 @@
 - Bump Mupen64 (RMG)
 - Bump pcsx2
 - Bump PPSSPP
-- Bump shadps4
+- Bump shadps4 (with new Launcher)
 - Bump Supermodel
 - Bump Xenia and Xenia-canary
 - Bump Xemu
@@ -39,6 +39,7 @@
 - BIZHAWK: fix core selection for PCE and Gameboy
 - BIZHAWK: fix launch error for ngpc and supergrafx
 - CONTROLLERS: fix Dualsense controller spamming when connected in bluetooth
+- DOLPHIN-TRIFORCE: fix sdl controllers not working (non-xinput)
 - EDUKE: send -j command by default if not specified in .eduke32 file
 - HBMAME: fix error on launch
 - LR-PX68K: clean up keropi\config file before launching a new game
@@ -96,6 +97,7 @@
 - SUPERMODEL: add possibility to manage game mappings in yml file, also add layout option (for arcade sticks)
 - SWITCH emulators: add option to sync nand, sdmc, load paths for yuzu forks (yuzu, suyu, citron, sudachi, eden)
 - VITA3K: if the game ID is missing in the gamefile name, RetroBat will still run vita3k without autoloading a game
+- WINDOWS: add .gameexe method to get game process to wsquashfs games and game folders (.wine, .pc...)
 
 ### Other stuff:
 - Now using es_theme_carbon from RetroBat official github
