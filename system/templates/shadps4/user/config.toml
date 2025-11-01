@@ -1,7 +1,4 @@
 [General]
-checkCompatibilityOnStartup = false
-chooseHomeTab = "General"
-compatibilityEnabled = false
 defaultControllerID = ""
 enableDiscordRPC = false
 isConnectedToNetwork = false
@@ -13,6 +10,7 @@ logFilter = ""
 logType = "sync"
 showSplash = false
 sideTrophy = "right"
+sysModulesPath = ""
 trophyNotificationDuration = 6.0
 userName = "RetroBat"
 volumeSlider = 100
@@ -26,6 +24,10 @@ specialPadClass = 1
 useSpecialPad = false
 useUnifiedInputConfig = true
 
+[Audio]
+mainOutputDevice = "Default Device"
+micDevice = "Default Device"
+padSpkOutputDevice = "Default Device"
 [GPU]
 allowHDR = false
 copyGPUBuffers = false
@@ -54,12 +56,13 @@ guestMarkers = false
 hostMarkers = false
 rdocEnable = false
 validation = false
+validation_core = true
 validation_gpu = false
 validation_sync = false
 
 [Debug]
 CollectShader = false
-ConfigVersion = "1c0ec3be2a2e37ff6870b0d9f306002b70eefa9e"
+ConfigVersion = "55bb7f7b9d0cf4cf476b5163fb3cb666e6c267f5"
 DebugDump = false
 FPSColor = true
 isSeparateLogFilesEnabled = false
@@ -72,7 +75,6 @@ TrophyKey = ""
 addonInstallDir = ""
 installDirs = []
 installDirsEnabled = [true]
-loadGameSizeEnabled = true
 saveDataPath = ""
 
 [Settings]

@@ -247,6 +247,7 @@ emulators\rpcs3\GuiConfigs
 emulators\ryujinx
 emulators\scummvm
 emulators\shadps4
+emulators\shadps4\launcher
 emulators\shadps4\user
 emulators\simcoupe
 emulators\simple64
