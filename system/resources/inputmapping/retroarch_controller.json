@@ -178,6 +178,57 @@
             "input_analog_sensitivity": "1.500000",
             "switch_trigger": "9"
         }
+    },
+    {
+        "Emulator": "libretro",
+        "Name": "DualSense Edge Wireless Controller",
+        "Guid": "030000004c050000f20d000000016800",
+        "Driver": "sdl2",
+        "Mapping": {
+            "analog_dpad_mode": "1",
+            "a_btn": "2",
+            "a_axis": "nul",
+            "b_btn": "1",
+            "b_axis": "nul",
+            "down_btn": "h0down",
+            "l2_axis": "+3",
+            "l_btn": "4",
+            "l_x_minus_axis": "-0",
+            "l_x_plus_axis": "+0",
+            "l_y_minus_axis": "-1",
+            "l_y_plus_axis": "+1",
+            "left_btn": "h0left",
+            "r_btn": "5",
+            "r2_axis": "+4",
+            "right_btn": "h0right",
+            "select_btn": "8",
+            "start_btn": "9",
+            "up_btn": "h0up",
+            "x_btn": "3",
+            "y_btn": "0",
+            "r_x_minus_axis": "-2",
+            "r_x_plus_axis": "+2",
+            "r_y_minus_axis": "-5",
+            "r_y_plus_axis": "+5",
+            "r3_btn": "11",
+            "l3_btn": "10",
+        },
+        "HotKeyMapping": {
+            "input_enable_hotkey_btn": "8",
+            "input_exit_emulator_btn": "9",
+            "input_pause_toggle_btn": "2",
+            "input_menu_toggle_btn": "1",
+            "input_load_state_btn": "3",
+            "input_save_state_btn": "0",
+            "input_ai_service_btn": "nul",
+            "input_state_slot_decrease_btn": "h0down",
+            "input_state_slot_increase_btn": "h0up",
+            "input_rewind_btn": "h0left",
+            "input_hold_fast_forward_btn": "h0right"
+        },
+        "ControllerInfo": {
+            "ignoreSystemSpecificMapping": "true"
+        }
     }
   ]
 }
