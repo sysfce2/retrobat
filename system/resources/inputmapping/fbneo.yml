@@ -3026,8 +3026,8 @@ gondo:
   Down: dpdown
   Left: dpleft
   Right: dpright
-  Button 1 (Cocktail): x
-  Button 2 (Cocktail): a
+  Button 1: x
+  Button 2: a
   Fire 3 (Rotate): b
   Rotate Left: leftshoulder
   Rotate Right: rightshoulder
@@ -3043,8 +3043,8 @@ makyosen:
   Down: dpdown
   Left: dpleft
   Right: dpright
-  Button 1 (Cocktail): x
-  Button 2 (Cocktail): a
+  Button 1: x
+  Button 2: a
   Fire 3 (Rotate): b
   Rotate Left: leftshoulder
   Rotate Right: rightshoulder
@@ -3699,6 +3699,7 @@ ad2083:
   Service: rightstick
 amidar:
   players: 2
+  noplayer: 1
   Coin 1: back
   Coin 2: back
   Start 1: start
@@ -3747,6 +3748,7 @@ knockout:
   Service: rightstick
 anteater:
   players: 2
+  noplayer: 1
   Coin 1: back
   Coin 2: back
   Start 1: start
@@ -3806,6 +3808,7 @@ scorpion:
   Fire 2 (Cocktail): a
 armorcar:
   players: 2
+  noplayer: 1
   Coin 1: back
   Coin 2: back
   Start 1: start
@@ -3862,6 +3865,7 @@ namenayo:
   Fire 1 (Cocktail): x
 azurian:
   players: 2
+  noplayer: 1
   Coin 1: back
   Start 1: start
   Start 2: start
@@ -4080,6 +4084,7 @@ fantastc:
   Fire (Cocktail): x
 frogg:
   players: 2
+  noplayer: 1
   Coin 1: back
   Coin 2: back
   Start 1: start
@@ -4090,6 +4095,7 @@ frogg:
   Right (Cocktail): dpright
 frogger:
   players: 2
+  noplayer: 1
   Coin 1: back
   Coin 2: back
   Start 1: start
@@ -4101,6 +4107,7 @@ frogger:
   Service: rightstick
 frogf:
   players: 2
+  noplayer: 1
   Coin 1: back
   Coin 2: back
   Start 1: start
@@ -4112,6 +4119,7 @@ frogf:
   Service: rightstick
 froggrs:
   players: 2
+  noplayer: 1
   Coin 1: back
   Coin 2: back
   Start 1: start
@@ -4123,6 +4131,7 @@ froggrs:
   Service: rightstick
 froggermc:
   players: 2
+  noplayer: 1
   Coin 1: back
   Coin 2: back
   Start 1: start
@@ -9939,6 +9948,7 @@ term2:
   Service: rightstick
 1942:
   players: 2
+  noplayer: 1
   Coin 1: back
   Coin 2: back
   Start 1: start
