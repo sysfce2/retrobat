@@ -1,5 +1,32 @@
 # Changelog
 
+## RetroBat 7.5.1
+<details>
+
+### Emulators\cores:
+- Add C16 (Commodore 16) with lr-vice
+- Add bsyndrome (Bermuda Syndrome engine)
+- Bump XEMU
+
+### Fixes:
+- CEMU: fix screen toggle button in case of back
+- EXELAUNCHER: avoid selection of an .exe containing "uninst" when parsing a game folder for executable
+- EXELAUNCHER: add option to avoid looking for executable names in .bat and .cmd files
+- FBNEO: fixed a few automatic mappings for standalone
+- G&W: fix artwork grabbing from saves\mame\artwork folder
+- HALF-LIFE: fix xash3d not working
+- MESEN: add hotkey + start exit in padtokey
+- RETROBAT EXECUTABLE: fix video not fullscreen when using dpi setting 
+
+### Features:
+- PCSX2: add option to select position of messages
+- XENIA: add postprocess_scaling_and_sharpening setting
+
+### Other stuff:
+- CONTROLLERS: add Dualsense Edge correct mapping in RetroArch
+- RETROBAT UPDATE: add possibility to update by specifying the .zip update file with the "-uselocalzip" argument
+</details>
+
 ## RetroBat 7.5
 <details>
 
