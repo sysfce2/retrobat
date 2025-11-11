@@ -1,5 +1,13 @@
 # Changelog
 
+## RetroBat 7.5.1.1
+<details>
+
+### Fixes:
+- EXELAUNCHER: Fix launch of wsquashfs broken with 7.5.1
+
+</details>
+
 ## RetroBat 7.5.1
 <details>
 
