@@ -10868,3 +10868,19 @@ msgstr "AUTORISER SHADERS PAR JEU/CORE"
 msgctxt "game_options"
 msgid "Enable this to enable shaders even when RetroBat has no shader set."
 msgstr "Activer cette option pour utiliser les presets enregistrés directement dans RetroArch."
+
+msgctxt "game_options"
+msgid "OVERRIDE BIOS PATH"
+msgstr "MODIFIER DOSSIER DU BIOS"
+
+msgctxt "game_options"
+msgid "Point RetroArch 'system' directory to a different folder."
+msgstr "Permet de pointer RetroArch vers un dossier 'system' différent du répertoire 'bios'."
+
+msgctxt "game_options"
+msgid "MAP BUTTON TO MICROPHONE BLOW"
+msgstr "BOUTON POUR ÉMULER LE MICROPHONE"
+
+msgctxt "game_options"
+msgid "GAMEPAD SCREEN TOGGLE"
+msgstr "BASCULER L'ÉCRAN GAMEPAD"
