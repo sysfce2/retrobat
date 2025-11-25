@@ -3,7 +3,7 @@
     {
         "Emulator": "libretro",
         "Name": "Nintendo Switch Online N64 Controller",
-        "Guid": "030000007e050000192000000000680c, 030000007e050000192000001202680c",
+        "Guid": "030000007e050000192000000000680c, 030000007e050000192000001202680c, 030000007e050000192000000002680c",
         "Driver": "",
         "Mapping": {
             "analog_dpad_mode": "0",
@@ -48,7 +48,7 @@
     {
         "Emulator": "ares",
         "Name": "Nintendo Switch Online N64 Controller",
-        "Guid": "030000007e050000192000000000680c, 030000007e050000192000001202680c",
+        "Guid": "030000007e050000192000000000680c, 030000007e050000192000001202680c, 030000007e050000192000000002680c",
         "Driver": "",
         "Mapping": {
             "Pad.Up": "1/1/Lo",
@@ -83,7 +83,7 @@
     {
         "Emulator": "bizhawk",
         "Name": "Nintendo Switch Online N64 Controller",
-        "Guid": "030000007e050000192000000000680c, 030000007e050000192000001202680c",
+        "Guid": "030000007e050000192000000000680c, 030000007e050000192000001202680c, 030000007e050000192000000002680c",
         "Driver": "",
         "Mapping": {
             "A Up": "X AxisUp",
@@ -115,7 +115,7 @@
     {
         "Emulator": "mupen64",
         "Name": "Nintendo Switch Online N64 Controller",
-        "Guid": "030000007e050000192000000000680c, 030000007e050000192000001202680c",
+        "Guid": "030000007e050000192000000000680c, 030000007e050000192000001202680c, 030000007e050000192000000002680c",
         "Driver": "",
         "Mapping": {
             "A_InputType": "0",
@@ -232,7 +232,7 @@
     {
         "Emulator": "simple64",
         "Name": "Nintendo Switch Online N64 Controller",
-        "Guid": "030000007e050000192000000000680c, 030000007e050000192000001202680c",
+        "Guid": "030000007e050000192000000000680c, 030000007e050000192000001202680c, 030000007e050000192000000002680c",
         "Driver": "",
         "Mapping": {
             "A": "\"0,4\"",
@@ -259,34 +259,61 @@
         }
     },
     {
-        "Emulator": "soh",
+        "Emulator": "ship2",
         "Name": "Nintendo Switch Online N64 Controller",
-        "Guid": "030000007e050000192000000000680c, 030000007e050000192000001202680c",
+        "Guid": "030000007e050000192000000002680c, 030000007e050000192000000000680c, 030000007e050000192000001202680c",
         "Driver": "",
         "Mapping": {
-            "-512": "65536",
-            "-513": "524288",
-            "0": "32768",
-            "1": "16384",
-            "10": "16",
-            "11": "2048",
-            "12": "1024",
-            "13": "512",
-            "14": "256",
-            "2": "2",
-            "3": "8",
-            "4": "1",
-            "512": "131072",
-            "513": "262144",
-            "516": "8192",
-            "517": "4",
-            "6": "4096",
-            "7": "64",
-            "8": "128",
-            "9": "32"
+            "ls_d0": "SDLA0-ADN",
+            "ls_d1": "SDLA0-ADP",
+            "ls_d2": "SDLA1-ADN",
+            "ls_d3": "SDLA1-ADP",
+            "button_1": "SDLB4",
+            "button_1024": "SDLB12",
+            "button_16": "SDLB10",
+            "button_16384": "SDLB1",
+            "button_2": "SDLB2",
+            "button_2048": "SDLB11",
+            "button_256": "SDLB14",
+            "button_32": "SDLB9",
+            "button_32768": "SDLB0",
+            "button_4": "SDLA5-ADP",
+            "button_4096": "SDLB6",
+            "button_512": "SDLB13",
+            "button_8": "SDLB3",
+            "button_8192": "SDLA4-ADP"
         },
         "ControllerInfo": {
-            "switch_trigger": "516_0_7_8192"
+            "switch_trigger": "SDLB7"
+        }
+    },
+    {
+        "Emulator": "soh",
+        "Name": "Nintendo Switch Online N64 Controller",
+        "Guid": "030000007e050000192000000002680c, 030000007e050000192000000000680c, 030000007e050000192000001202680c",
+        "Driver": "",
+        "Mapping": {
+            "ls_d0": "SDLA0-ADN",
+            "ls_d1": "SDLA0-ADP",
+            "ls_d2": "SDLA1-ADN",
+            "ls_d3": "SDLA1-ADP",
+            "button_1": "SDLB4",
+            "button_1024": "SDLB12",
+            "button_16": "SDLB10",
+            "button_16384": "SDLB1",
+            "button_2": "SDLB2",
+            "button_2048": "SDLB11",
+            "button_256": "SDLB14",
+            "button_32": "SDLB9",
+            "button_32768": "SDLB0",
+            "button_4": "SDLA5-ADP",
+            "button_4096": "SDLB6",
+            "button_512": "SDLB13",
+            "button_8": "SDLB3",
+            "button_8192": "SDLA4-ADP"
+        },
+        "ControllerInfo": {
+            "switch_trigger": "SDLB7"
         }
     },
     {
@@ -881,29 +908,55 @@
         }
     },
     {
+        "Emulator": "ship2",
+        "Name": "Mayflash N64 Adapter",
+        "Guid": "03000000d620000010a7000000000000",
+        "Driver": "",
+        "Mapping": {
+            "ls_d0": "SDLA0-ADN",
+            "ls_d1": "SDLA0-ADP",
+            "ls_d2": "SDLA1-ADN",
+            "ls_d3": "SDLA1-ADP",
+            "button_1": "SDLA2-ADP",
+            "button_1024": "SDLB12",
+            "button_16": "SDLB10",
+            "button_16384": "SDLB1",
+            "button_2": "SDLA2-ADN",
+            "button_2048": "SDLB11",
+            "button_256": "SDLB14",
+            "button_32": "SDLB9",
+            "button_32768": "SDLB0",
+            "button_4": "SDLA3-ADP",
+            "button_4096": "SDLB6",
+            "button_512": "SDLB13",
+            "button_8": "SDLA3-ADN",
+            "button_8192": "SDLA4-ADP"
+        }
+    },
+    {
         "Emulator": "soh",
         "Name": "Mayflash N64 Adapter",
         "Guid": "03000000d620000010a7000000000000",
         "Driver": "",
         "Mapping": {
-            "-512": "65536",
-            "-513": "524288",
-            "-514": "2",
-            "-515": "8",
-            "0": "32768",
-            "1": "16384",
-            "10": "16",
-            "11": "2048",
-            "12": "1024",
-            "13": "512",
-            "14": "256",
-            "512": "131072",
-            "513": "262144",
-            "514": "1",
-            "515": "4",
-            "516": "8192",
-            "6": "4096",
-            "9": "32"
+            "ls_d0": "SDLA0-ADN",
+            "ls_d1": "SDLA0-ADP",
+            "ls_d2": "SDLA1-ADN",
+            "ls_d3": "SDLA1-ADP",
+            "button_1": "SDLA2-ADP",
+            "button_1024": "SDLB12",
+            "button_16": "SDLB10",
+            "button_16384": "SDLB1",
+            "button_2": "SDLA2-ADN",
+            "button_2048": "SDLB11",
+            "button_256": "SDLB14",
+            "button_32": "SDLB9",
+            "button_32768": "SDLB0",
+            "button_4": "SDLA3-ADP",
+            "button_4096": "SDLB6",
+            "button_512": "SDLB13",
+            "button_8": "SDLA3-ADN",
+            "button_8192": "SDLA4-ADP"
         }
     },
     {
@@ -1155,29 +1208,55 @@
         }
     },
     {
+        "Emulator": "ship2",
+        "Name": "Raphnet N64 Adapter",
+        "Guid": "030000009b2800006300000000000000,030000009b2800006100000000000000",
+        "Driver": "",
+        "Mapping": {
+            "ls_d0": "SDLA0-ADN",
+            "ls_d1": "SDLA0-ADP",
+            "ls_d2": "SDLA1-ADN",
+            "ls_d3": "SDLA1-ADP",
+            "button_1": "SDLA2-ADP",
+            "button_1024": "SDLB12",
+            "button_16": "SDLB10",
+            "button_16384": "SDLB1",
+            "button_2": "SDLA2-ADN",
+            "button_2048": "SDLB11",
+            "button_256": "SDLB14",
+            "button_32": "SDLB9",
+            "button_32768": "SDLB0",
+            "button_4": "SDLA3-ADP",
+            "button_4096": "SDLB6",
+            "button_512": "SDLB13",
+            "button_8": "SDLA3-ADN",
+            "button_8192": "SDLA4-ADP"
+        }
+    },
+    {
         "Emulator": "soh",
         "Name": "Raphnet N64 Adapter",
         "Guid": "030000009b2800006300000000000000,030000009b2800006100000000000000",
         "Driver": "",
         "Mapping": {
-            "-512": "65536",
-            "-513": "524288",
-            "-514": "2",
-            "-515": "8",
-            "0": "32768",
-            "1": "16384",
-            "10": "16",
-            "11": "2048",
-            "12": "1024",
-            "13": "512",
-            "14": "256",
-            "512": "131072",
-            "513": "262144",
-            "514": "1",
-            "515": "4",
-            "516": "8192",
-            "6": "4096",
-            "9": "32"
+            "ls_d0": "SDLA0-ADN",
+            "ls_d1": "SDLA0-ADP",
+            "ls_d2": "SDLA1-ADN",
+            "ls_d3": "SDLA1-ADP",
+            "button_1": "SDLA2-ADP",
+            "button_1024": "SDLB12",
+            "button_16": "SDLB10",
+            "button_16384": "SDLB1",
+            "button_2": "SDLA2-ADN",
+            "button_2048": "SDLB11",
+            "button_256": "SDLB14",
+            "button_32": "SDLB9",
+            "button_32768": "SDLB0",
+            "button_4": "SDLA3-ADP",
+            "button_4096": "SDLB6",
+            "button_512": "SDLB13",
+            "button_8": "SDLA3-ADN",
+            "button_8192": "SDLA4-ADP"
         }
     },
     {
