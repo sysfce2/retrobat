@@ -5830,6 +5830,28 @@ aliensextermination_gun:
   Service1: kb_S # Service
   Test: kb_T # Test
 
+angrybirds:
+  Test: l3  # Test
+  Service1: r3  # Service
+  Coin1: select  # Coin
+  P1Button1: south  # BallTray Switch
+  P1Button2: east  # Plunger Switch
+  Analog0: leftstickleft  # Slingshot X
+  Analog2: leftstickup  # Slingshot Y
+  Coin2: select  # Coin2
+  P2Button1: up  # Volume Up
+  P2Button2: down  # Volume Down
+
+angrybirds_gun:
+  # rawinput:
+  Test: kb_T                 # Test
+  Service1: kb_S            # Service
+  # Player 1
+  Coin1: kb_5               # Coin 1
+  Coin2: kb_1               # Coin 2
+  mouseleft_1: P1Button1  # Plunger Switch
+  mouseright_1: P1Button2  # Plunger Switch
+
 bbhhome:
   Analog0: rightstickleft # P1 Gun X
   Analog2: rightstickup # P1 Gun Y
