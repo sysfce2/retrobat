@@ -11,7 +11,7 @@ Video
   Shader: None
   Multiplier: 2
   Output: Scale
-  AspectCorrection: true
+  AspectCorrectionMode: Standard
   AdaptiveSizing: true
   AutoCentering: false
   Luminance: 1.0
@@ -44,6 +44,7 @@ Input
 Boot
   Fast: false
   Debugger: false
+  AwaitGDBClient: false
   Prefer: NTSC-U
 General
   ShowStatusBar: true
@@ -75,6 +76,12 @@ Nintendo64
   ControllerPakBankString: 32KiB (Default)
   Visible: true
   Path
+GameBoyAdvance
+  Player: false
+  Visible: true
+  Path
+  Firmware
+    BIOS.World
 MegaDrive
   TMSS: false
   Visible: true
@@ -317,8 +324,17 @@ PCEngineCD
   Path
   Firmware
     System-Card-1.0.Japan
-    Arcade-Card.Japan
+    System-Card-3.0.Japan
     System-Card-3.0.US
+    Games-Express.Japan
+LaserActiveNECPAC
+  Visible: true
+  Path
+  Firmware
+    PAC-N10.US
+    PAC-N1.Japan
+    PCE-LP1.Japan
+    System-Card-1.0.Japan
     Games-Express.Japan
 SuperGrafx
   Visible: true
@@ -352,12 +368,10 @@ GameBoy
 GameBoyColor
   Visible: true
   Path
-GameBoyAdvance
+SG-1000
   Visible: true
   Path
-  Firmware
-    BIOS.World
-SG-1000
+SC-3000
   Visible: true
   Path
 MasterSystem
@@ -372,9 +386,6 @@ GameGear
   Path
   Firmware
     BIOS.World
-MegaDrive
-  Visible: true
-  Path
 Mega32X
   Visible: true
   Path
@@ -388,6 +399,12 @@ MegaCD
 MegaCD32X
   Visible: true
   Path
+LaserActiveSEGAPAC
+  Visible: true
+  Path
+  Firmware
+    BIOS.US
+    BIOS.Japan
 NeoGeoAES
   Visible: true
   Path
