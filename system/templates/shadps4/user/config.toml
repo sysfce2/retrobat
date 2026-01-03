@@ -17,10 +17,11 @@ volumeSlider = 100
 
 [Input]
 backgroundControllerInput = false
-cursorHideTimeout = 1
+cursorHideTimeout = 5
 cursorState = 1
 isMotionControlsEnabled = true
 specialPadClass = 1
+usbDeviceBackend = 0
 useSpecialPad = false
 useUnifiedInputConfig = true
 
@@ -28,14 +29,15 @@ useUnifiedInputConfig = true
 mainOutputDevice = "Default Device"
 micDevice = "Default Device"
 padSpkOutputDevice = "Default Device"
+
 [GPU]
 allowHDR = false
 copyGPUBuffers = false
 directMemoryAccess = false
 dumpShaders = false
-fsrEnabled = true
-Fullscreen = true
-FullscreenMode = "Fullscreen (Borderless)"
+fsrEnabled = false
+Fullscreen = false
+FullscreenMode = "Windowed"
 internalScreenHeight = 720
 internalScreenWidth = 1280
 nullGpu = false
@@ -54,6 +56,8 @@ crashDiagnostic = false
 gpuId = -1
 guestMarkers = false
 hostMarkers = false
+pipelineCacheArchive = false
+pipelineCacheEnable = false
 rdocEnable = false
 validation = false
 validation_core = true
@@ -62,11 +66,12 @@ validation_sync = false
 
 [Debug]
 CollectShader = false
-ConfigVersion = "55bb7f7b9d0cf4cf476b5163fb3cb666e6c267f5"
+ConfigVersion = "950f6264de2e4f1b53a82c759cd140a6d4c3a646"
 DebugDump = false
 FPSColor = true
 isSeparateLogFilesEnabled = false
 logEnabled = true
+showFpsCounter = false
 
 [Keys]
 TrophyKey = ""

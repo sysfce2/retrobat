@@ -12,7 +12,10 @@ ThreadedSCSP = false
 Volume = 0.80000001192092896
 
 [CDBlock]
+OverrideROM = false
+ROMPath = ''
 ReadSpeed = 2
+UseLLE = false
 
 [Cartridge]
 AutoLoadGameCarts = true
@@ -41,7 +44,9 @@ UIScale = 1.0
 AltSpeedFactor = 0.5
 BoostEmuThreadPriority = true
 BoostProcessPriority = true
+CheckForUpdates = false
 EnableRewindBuffer = false
+IncludeNightlyBuilds = false
 MainSpeedFactor = 1.0
 PauseWhenUnfocused = false
 PreloadDiscImagesToRAM = false
@@ -52,6 +57,7 @@ UseAltSpeed = false
 
     [General.PathOverrides]
     BackupMemory = '..\..\saves\saturn\ymir\backup'
+	CDBlockROMImages = ''
     Dumps = ''
     ExportedBackups = ''
     IPLROMImages = '..\..\bios'
@@ -66,6 +72,7 @@ DecreaseSpeedLarge = [ 'Shift+Comma' ]
 DecreaseVolume = [ 'Ctrl+MinusUnderscore' ]
 DumpMemory = [ 'Ctrl+F11' ]
 EjectDisc = [ 'Ctrl+W' ]
+ExitApp = [ 'Ctrl+F12' ]
 ForwardFrameStep = [ 'RightBracket' ]
 HardReset = [ 'Ctrl+R' ]
 IncreaseSpeed = [ 'Period' ]
@@ -346,4 +353,4 @@ SyncInWindowedMode = true
 ThreadedDeinterlacer = true
 ThreadedVDP = true
 TransparentMeshes = false
-UseFullRefreshRateWithVideoSync = true
+UseFullRefreshRateWithVideoSync = false
