@@ -2561,28 +2561,45 @@ gundampod:
   Test: l3 # Test
 
 ms:
-  Analog2: leftstickup # Throttle Brake
-  Analog4: rightstickleft # Analog X Right
-  Analog6: rightstickup # Analog Y Down
-  P1Button1: south # Enter Switch
-  P1ButtonDown: down # Menu Down
-  P1ButtonUp: up # Menu Up
-  Service1: r3 # Service/Coin
-  Test: l3 # Test
+  Test: l3  # Test
+  Service1: r3  # Service/Coin
+  P1Button1: south  # Enter Switch
+  P1ButtonUp: up  # Menu Up
+  P1ButtonDown: down  # Menu Down
+  Analog2: rightstickup  # Throttle Brake
+  Analog4: leftstickleft  # Analog X Right
+  Analog6: leftstickup  # Analog Y Down
+  ExtensionOne11: east  # Missile
+  ExtensionOne12: south # Machine Gun
 
 starwars:
-  Analog2: lefttrigger # Throttle Brake
-  Analog4: leftstickleft # Analog X Right
-  Analog6: leftstickup # Analog Y Down
-  ExtensionOne12: righttrigger # Weapon Trigger
-  ExtensionOne11: leftshoulder # Weapon Button
-  P1Button1: south # Enter Switch
-  P1Button3: west # View Change
-  P1ButtonDown: down # Menu Down
-  P1ButtonStart: start # Start
-  P1ButtonUp: up # Menu Up
-  Service1: r3 # Service
-  Test: l3 # Test
+  Test: l3  # Test
+  Service1: r3  # Service
+  P1ButtonStart: start  # Start
+  P1Button1: leftshoulder  # Enter Switch
+  P1Button3: rightshoulder  # View Change
+  P1ButtonUp: up  # Menu Up
+  P1ButtonDown: down  # Menu Down
+  Analog2: rightstickup  # Throttle Brake
+  Analog4: leftstickleft  # Analog X Right
+  Analog6: leftstickup  # Analog Y Down
+  ExtensionOne11: east  # Weapon Button
+  ExtensionOne12: south # Weapon Trigger
+
+starwarstfa:
+  Test: l3  # Test
+  Service1: r3  # Service
+  Coin1: select  # Coin
+  P1ButtonStart: start  # Start
+  P1Button1: leftshoulder  # Enter Switch
+  P1Button3: rightshoulder  # View Change
+  P1ButtonUp: up  # Menu Up
+  P1ButtonDown: down  # Menu Down
+  Analog2: rightstickup  # Throttle Brake
+  Analog4: leftstickleft  # Analog X Right
+  Analog6: leftstickup  # Analog Y Down
+  ExtensionOne11: east  # Weapon Button
+  ExtensionOne12: south # Weapon Trigger
 
 ############### INTERACTIVEMOVIE ###############
 
