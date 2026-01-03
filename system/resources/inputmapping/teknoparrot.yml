@@ -7578,7 +7578,7 @@ targetbravo_gun:
   mouseleft_2: P2Button1    # P2 Left Trigger
   mouseright_2: P2Button2   # P2 Right Trigger
   mousemiddle_2: P2Button3  # P2 Action
-  P1Button4: kb_irght          # Player 2 Change
+  P2Button4: kb_right       # Player 2 Change
 
   # Unmapped inputs:
   P1LightGun:   # Player 1 Light Gun
