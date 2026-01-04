@@ -1,5 +1,5 @@
 {
-  "version": 67,
+  "version": 71,
   "enable_file_log": true,
   "backend_threading": "Auto",
   "res_scale": 1,
@@ -26,6 +26,7 @@
   "system_time_zone": "UTC",
   "system_time_offset": 0,
   "match_system_time": true,
+  "use_input_global_config": false,
   "docked_mode": true,
   "enable_discord_integration": false,
   "check_updates_on_start": false,
@@ -33,6 +34,7 @@
   "focus_lost_action_type": "DoNothing",
   "show_confirm_exit": false,
   "ignore_applet": false,
+  "skip_user_profiles": false,
   "remember_window_state": true,
   "show_title_bar": false,
   "enable_hardware_acceleration": true,
@@ -47,10 +49,11 @@
   "enable_color_space_passthrough": false,
   "enable_ptc": true,
   "enable_low_power_ptc": false,
+  "tick_scalar": 0,
   "enable_internet_access": false,
   "enable_fs_integrity_checks": true,
   "fs_global_access_log_mode": 0,
-  "audio_backend": "SDL2",
+  "audio_backend": "SDL3",
   "audio_volume": 1,
   "memory_manager_mode": "HostMappedUnsafe",
   "dram_size": 0,
@@ -86,9 +89,9 @@
   },
   "window_startup": {
     "window_size_width": 1280,
-    "window_size_height": 720,
-    "window_position_x": 200,
-    "window_position_y": 200,
+    "window_size_height": 791,
+    "window_position_x": 0,
+    "window_position_y": 0,
     "window_maximized": false
   },
   "language_code": "en_US",
@@ -114,8 +117,10 @@
     "res_scale_down": "Unbound",
     "volume_up": "Unbound",
     "volume_down": "Unbound",
-    "custom_vsync_interval_increment": "Unknown",
-    "custom_vsync_interval_decrement": "Unknown"
+    "custom_vsync_interval_increment": "Unbound",
+    "custom_vsync_interval_decrement": "Unbound",
+    "turbo_mode": "Unbound",
+    "turbo_mode_while_held": false
   },
   "input_config": [
     {
@@ -158,6 +163,7 @@
       "version": 1,
       "backend": "WindowKeyboard",
       "id": "0",
+      "name": "Keyboard",
       "controller_type": "ProController",
       "player_index": "Player1"
     }
@@ -171,6 +177,9 @@
   "multiplayer_ldn_passphrase": "",
   "ldn_server": "",
   "use_hypervisor": true,
+  "enable_gdb_stub": false,
+  "gdb_stub_port": 55555,
+  "debugger_suspend_on_start": false,
   "show_dirty_hacks": false,
   "dirty_hacks": []
 }

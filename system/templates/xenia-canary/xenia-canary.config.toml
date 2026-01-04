@@ -5,7 +5,17 @@ enable_xmp = true                                 	# Enables Music Player playba
 ffmpeg_verbose = false                            	# Verbose FFmpeg output (debug and above)
 mute = false                                      	# Mutes all audio output.
 use_dedicated_xma_thread = true                   	# Enables XMA decoding on separate thread. Disabled should produce better results, but decrease performance a bit.
-use_new_decoder = false                           	# Enables usage of new experimental XMA audio decoder.
+xma_decoder = "new"                               	# Decoder version used to process XMA audio.
+                                                  	# Use: [fake, master, old, new]
+                                                  	#  fake: 
+                                                  	#   No audio will be decoded.
+                                                  	#  master: 
+                                                  	#   Version of decoder exactly like on base version of Xenia.
+                                                  	#  old: 
+                                                  	#   Decoder based on master version of decoder with few improvements.
+                                                  	#  new: 
+                                                  	#   New version of decoder. Provides highest stability, but isn't yet finished.
+
 xmp_default_volume = 70                           	# Default music volume if game doesn't set it [0-100].
 
 
@@ -64,7 +74,7 @@ writable_code_segments = false                    	# Enables a program to write 
 
 
 [Config]
-defaults_date = 2024083120                        	# Do not modify - internal version of the default values in the config, for seamless updates if default value of any option is changed.
+defaults_date = 2025120421                        	# Do not modify - internal version of the default values in the config, for seamless updates if default value of any option is changed.
 
 
 [Content]
@@ -85,7 +95,6 @@ d3d12_break_on_warning = false                    	# Break on Direct3D 12 valida
 d3d12_debug = false                               	# Enable Direct3D 12 and DXGI debug layer.
 d3d12_dxbc_disasm = false                         	# Disassemble DXBC shaders after generation.
 d3d12_dxbc_disasm_dxilconv = false                	# Disassemble DXBC shaders after conversion to DXIL, if DXIL shaders are supported by the OS, and DirectX Shader Compiler DLLs available at https://github.com/microsoft/DirectXShaderCompiler/releases are present.
-d3d12_nvapi_use_driver_heap_priorities = false    	# nvidia stuff
 d3d12_pipeline_creation_threads = -1              	# Number of threads used for graphics pipeline creation. -1 to calculate automatically (75% of logical CPU cores), a positive number to specify the number of threads explicitly (up to the number of logical CPU cores), 0 to disable multithreaded pipeline creation.
 d3d12_queue_priority = 1                          	# Graphics (direct) command queue scheduling priority, 0 - normal, 1 - high, 2 - global realtime (requires administrator privileges, may impact system responsibility)
 d3d12_submit_on_primary_buffer_end = true         	# Submit the command list when a PM4 primary buffer ends if it's possible to submit immediately to try to reduce frame latency.
@@ -202,6 +211,7 @@ framerate_limit = 0                               	# Maximum frames per second. 
 gamma_render_target_as_srgb = false               	# When the host can't write piecewise linear gamma directly with correct blending, use sRGB output on the host for conceptually correct blending in linear color space while having slightly different precision distribution in the render target and severely incorrect values if the game accesses the resulting colors directly as raw data.
 gpu = "any"                                       	# Graphics system. Use: [any, d3d12, vulkan, null]
 gpu_allow_invalid_fetch_constants = true          	# Allow texture and vertex fetch constants with invalid type - generally unsafe because the constant may contain completely invalid values, but may be used to bypass fetch constant type errors in certain games until the real reason why they're invalid is found.
+gpu_allow_invalid_upload_range = false            	# Allows games to read data from pages that are marked as no access.
 half_pixel_offset = true                          	# Enable support of vertex half-pixel offset (D3D9 PA_SU_VTX_CNTL PIX_CENTER). Generally games are aware of the half-pixel offset, and having this enabled is the correct behavior (disabling this may significantly break post-processing in some games), but in certain games it might have been ignored, resulting in slight blurriness of UI textures, for instance, when they are read between texels rather than at texel centers, or the leftmost/topmost pixels may not be fully covered when MSAA is used with fullscreen passes.
 ignore_32bit_vertex_index_support = false         	# For host graphics API downlevel testing only (useful only for Qualcomm Adreno 4xx-level host GPU testing), force indirection or pre-masking and pre-swapping of 32-bit vertex indices as if the host only supports 24-bit indices.
 log_guest_driven_gpu_register_written_values = false	# Only does anything in debug builds, if set will log every write to a gpu register done by a guest. Does not log writes that are done by the CP on its own, just ones the guest makes or instructs it to make.
@@ -221,8 +231,12 @@ primitive_processor_cache_min_indices = 4096      	# Smallest number of guest in
 
 query_occlusion_sample_lower_threshold = 80       	# If set to -1 no sample counts are written, games may hang. Else, the sample count of every tile will be incremented on every EVENT_WRITE_ZPD by this number. Setting this to 0 means everything is reported as occluded.
 query_occlusion_sample_upper_threshold = 100      	# Set to higher number than query_occlusion_sample_lower_threshold. This value is ignored if query_occlusion_sample_lower_threshold is set to -1.
-readback_memexport = false                        	# [D3D12 Only] Read data written by memory export in shaders on the CPU. This may be needed in some games (but many only access exported data on the GPU, and this flag isn't needed to handle such behavior), but causes mid-frame synchronization, so it has a huge performance impact.
-readback_resolve = false                          	# [D3D12 Only] Read render-to-texture results on the CPU. This may be needed in some games, for instance, for screenshots in saved games, but causes mid-frame synchronization, so it has a huge performance impact.
+readback_memexport = false                        	# Read data written by memory export in shaders on the CPU. This may be needed in some games (but many only access exported data on the GPU, and this flag isn't needed to handle such behavior), but causes mid-frame synchronization, so it has a huge performance impact.
+readback_resolve = "none"                         	# Controls CPU readback of render-to-texture resolve results.
+                                                  	#  fast: Read from previous frame (1 frame delay, no GPU stall, slight performance hit)
+                                                  	#  full: Wait for GPU to finish (accurate but slow, GPU-CPU sync stall)
+                                                  	#  none: Disable readback completely (some games render better without it)
+
 render_target_path_d3d12 = ""                     	# Render target emulation path to use on Direct3D 12.
                                                   	# Use: [any, rtv, rov]
                                                   	#  rtv:
@@ -275,6 +289,7 @@ allow_plugins = false                             	# Allows loading of plugins/t
 apply_patches = true                              	# Enables custom patching functionality
 controller_hotkeys = false                        	# Hotkeys for Xbox and PS controllers.
 debug = false                                     	# Allow debugging and retain debug information.
+disable_doubleclick_fullscreen = false            	# Allows the user to disable the behavior where a fast double-click causes Xenia to enter fullscreen mode.
 discord = true                                    	# Enable Discord rich presence
 launch_module = ""                                	# Executable to launch from the .iso or the package instead of default.xex or the module specified by the game. Leave blank to launch the default module.
 notification_sound_path = ""                      	# Path (including filename) to selected notification sound. Sound MUST be in wav format!
@@ -326,11 +341,15 @@ keybind_y = "P"                                   	# List of keys to bind to Y, 
 
 
 [Kernel]
-Allow_nui_initialization = false                  	# Enable NUI initialization
+allow_avatar_initialization = false               	# Enable Avatar Initialization
+                                                  	#  Only set true when testing Avatar games. Certain games may
+                                                  	#  require kinect implementation.
+
+allow_incompatible_title_update = true            	# Allow title updates with mismatched signatures to be applied.
+allow_nui_initialization = false                  	# Enable NUI initialization
                                                   	#  Only set true when testing kinect games. Certain games may
                                                   	#  require avatar implementation.
 
-allow_incompatible_title_update = true            	# Allow title updates with mismatched signatures to be applied.
 apply_title_update = true                         	# Apply title updates.
 cl = ""                                           	# Specify additional command-line provided to guest.
 default_achievements_backend = "GPD"              	# Defines which achievements backend should be used as an default. Possible options: GPD.
@@ -351,7 +370,7 @@ enable_console = false                            	# Open a console window with 
 flush_log = true                                  	# Flush log file after each log line batch.
 log_file = ""                                     	# Logs are written to the given file
 log_level = 2                                     	# Maximum level to be logged. (0=error, 1=warning, 2=info, 3=debug)
-log_mask = 0                                      	# Disables specific categorizes for more granular debug logging. Kernel = 1, Apu = 2, Cpu = 4.
+log_mask = 0                                      	# Disables specific categorizes for more granular debug logging. Kernel = 1, Apu = 2, Cpu = 4, Gpu = 8.
 log_string_format_kernel_calls = false            	# Log kernel calls with the kHighFrequency tag.
 log_to_debugprint = false                         	# Dump the log to DebugPrint.
 log_to_stdout = true                              	# Write log output to stdout
@@ -454,7 +473,6 @@ vulkan_validation = false                         	# Enable the Vulkan validatio
 
 
 [Win32]
-enable_rdrand_ntdll_patch = true                  	# Hot-patches ntdll at the start of the process to not use rdrand as part of the RNG for heap randomization. Can reduce CPU usage significantly, but is untested on all Windows versions.
 win32_high_resolution_timer = true                	# Requests high-resolution timer from the NT kernel
 win32_mmcss = true                                	# Opt in the Multimedia Class Scheduler Service (MMCSS) scheduling for prioritized access to CPU resources
 
