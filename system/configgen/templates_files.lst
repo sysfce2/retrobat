@@ -128,6 +128,7 @@
 \system\templates\raze\raze_portable.ini|\emulators\raze\raze_portable.ini
 \system\templates\redream\redream.cfg|\emulators\redream\redream.cfg
 \system\templates\retroarch\assets\sounds\retroachievements\retroarch_standard.ogg|\sounds\retroachievements\retroarch_standard.ogg
+\system\templates\retroarch\config\MAME\MAME.opt|\emulators\retroarch\config\MAME\MAME.opt
 \system\templates\retroarch\retroarch-core-options.cfg|\emulators\retroarch\retroarch-core-options.cfg
 \system\templates\retroarch\retroarch.cfg|\emulators\retroarch\retroarch.cfg
 \system\templates\retroarch\saves\atomiswave\nvmem_atomiswave.zip|\saves\atomiswave\reicast

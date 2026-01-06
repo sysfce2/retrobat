@@ -15,13 +15,13 @@
         <mapping type="standard" name="JOY_right OR JOY_lsright" />
       </button>
       <button type="P1_BUTTON1" tag=":IN0" mask="16" defvalue="16" x="30" y="60" color="Blue" function="High Punch">
-        <mapping type="standard" name="JOY_north" />
+        <mapping type="standard" name="JOY_west" />
       </button>
       <button type="P1_BUTTON2" tag=":IN0" mask="32" defvalue="32" x="30" y="60" color="Blue" function="Block">
-        <mapping type="standard" name="JOY_r1" />
+        <mapping type="standard" name="JOY_l1" />
       </button>
       <button type="P1_BUTTON3" tag=":IN0" mask="64" defvalue="64" x="30" y="60" color="Blue" function="High Kick">
-        <mapping type="standard" name="JOY_east" />
+        <mapping type="standard" name="JOY_north" />
       </button>
       <button type="P2_JOYSTICK_UP" tag=":IN0" mask="256" defvalue="256" x="30" y="60" color="Blue" function="P2_JOYSTICK_UP">
         <mapping type="standard" name="JOY_up OR JOY_lsup" />
@@ -36,31 +36,31 @@
         <mapping type="standard" name="JOY_right OR JOY_lsright" />
       </button>
       <button type="P2_BUTTON1" tag=":IN0" mask="4096" defvalue="4096" x="30" y="60" color="Blue" function="High Punch">
-        <mapping type="standard" name="JOY_north" />
+        <mapping type="standard" name="JOY_west" />
       </button>
       <button type="P2_BUTTON2" tag=":IN0" mask="8192" defvalue="8192" x="30" y="60" color="Blue" function="Block">
-        <mapping type="standard" name="JOY_r1" />
+        <mapping type="standard" name="JOY_l1" />
       </button>
       <button type="P2_BUTTON3" tag=":IN0" mask="16384" defvalue="16384" x="30" y="60" color="Blue" function="High Kick">
-        <mapping type="standard" name="JOY_east" />
+        <mapping type="standard" name="JOY_north" />
       </button>
       <button type="P1_BUTTON4" tag=":IN1" mask="1" defvalue="1" x="30" y="60" color="Blue" function="Low punch">
-        <mapping type="standard" name="JOY_west" />
-      </button>
-      <button type="P1_BUTTON5" tag=":IN1" mask="2" defvalue="2" x="30" y="60" color="Blue" function="High Punch">
         <mapping type="standard" name="JOY_south" />
+      </button>
+      <button type="P1_BUTTON5" tag=":IN1" mask="2" defvalue="2" x="30" y="60" color="Blue" function="Low kick">
+        <mapping type="standard" name="JOY_east" />
       </button>
       <button type="P1_BUTTON6" tag=":IN1" mask="4" defvalue="4" x="30" y="60" color="Blue" function="Run">
-        <mapping type="standard" name="JOY_l1" />
+        <mapping type="standard" name="JOY_r1" />
       </button>
       <button type="P2_BUTTON4" tag=":IN1" mask="16" defvalue="16" x="30" y="60" color="Blue" function="Low Punch">
-        <mapping type="standard" name="JOY_west" />
-      </button>
-      <button type="P2_BUTTON5" tag=":IN1" mask="32" defvalue="32" x="30" y="60" color="Blue" function="High Punch">
         <mapping type="standard" name="JOY_south" />
       </button>
+      <button type="P2_BUTTON5" tag=":IN1" mask="32" defvalue="32" x="30" y="60" color="Blue" function="Low kick">
+        <mapping type="standard" name="JOY_east" />
+      </button>
       <button type="P2_BUTTON6" tag=":IN1" mask="64" defvalue="64" x="30" y="60" color="Blue" function="Run">
-        <mapping type="standard" name="JOY_l1" />
+        <mapping type="standard" name="JOY_r1" />
       </button>
     </layout>
     <layout type="modern8" joystickcolor="Black">
