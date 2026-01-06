@@ -1398,12 +1398,12 @@ marioun_6alternative:
   btn_r2: 12
 mk:
   analog_dpad_mode: 0
-  btn_a: 1
-  btn_b: 10
-  btn_x: 0
-  btn_y: 9
-  btn_l: 8
-  btn_r: 11
+  btn_a: 10
+  btn_b: 9
+  btn_x: 1
+  btn_y: 0
+  btn_l: 11
+  btn_r: 8
   btn_l2: -1
   btn_r2: -1
 mk_modern8:
@@ -1438,12 +1438,12 @@ mk_6alternative:
   btn_r2: -1
 mk2:
   analog_dpad_mode: 0
-  btn_a: 1
-  btn_b: 10
-  btn_x: 0
-  btn_y: 9
-  btn_l: 8
-  btn_r: 11
+  btn_a: 10
+  btn_b: 9
+  btn_x: 1
+  btn_y: 0
+  btn_l: 11
+  btn_r: 8
   btn_l2: -1
   btn_r2: -1
 mk2_modern8:
@@ -1478,12 +1478,12 @@ mk2_6alternative:
   btn_r2: -1
 mk3:
   analog_dpad_mode: 0
-  btn_a: 1
-  btn_b: 10
-  btn_x: 0
-  btn_y: 9
-  btn_l: 11
-  btn_r: 8
+  btn_a: 10
+  btn_b: 9
+  btn_x: 1
+  btn_y: 0
+  btn_l: 8
+  btn_r: 11
   btn_l2: -1
   btn_r2: -1
 mk3_modern8:
@@ -1518,12 +1518,12 @@ mk3_6alternative:
   btn_r2: -1
 mk4:
   analog_dpad_mode: 0
-  btn_a: 0
-  btn_b: 9
-  btn_x: 8
-  btn_y: 10
-  btn_l: 11
-  btn_r: 1
+  btn_a: 9
+  btn_b: 10
+  btn_x: 0
+  btn_y: 8
+  btn_l: 1
+  btn_r: 11
   btn_l2: -1
   btn_r2: -1
 mk4_modern8:
