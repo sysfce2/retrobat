@@ -1,0 +1,10 @@
+default:
+  shaderdx12: edge-smoothing/scalenx/scale2xplus
+  shaderGL: scalefx/scalefx-hybrid
+  shader: edge-smoothing/scalefx/scalefx-hybrid
+  ares: edge-smoothing/scalefx/scalefx-hybrid
+# Reshader  
+model2:
+  shader: disabled
+model3:
+  shader: disabled
