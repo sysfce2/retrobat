@@ -16,7 +16,7 @@
 - Bump MelonDS to 1.1
 - Bump Mupen64 (RMG) to 0.8.8zz
 - Bump OpenGoal to 0.2.31
-- Bump PCSX2 to 2.6
+- Bump PCSX2 to 2.6.1
 - Bump RPCS3
 - Bump ShadPS4
 - Bump Starship
