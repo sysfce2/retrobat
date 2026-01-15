@@ -134,7 +134,6 @@ emulators\cxbx-reloaded
 emulators\cxbx-reloaded\EmuDisk
 emulators\daphne
 emulators\demul
-emulators\demul-old
 emulators\desmume
 emulators\dhewm3
 emulators\dhewm3\base
@@ -342,6 +341,9 @@ saves\dolphin\User\GC\USA
 saves\dolphin\User\Wii
 saves\doom3
 saves\doom3\dhewm3
+saves\dreamcast\flycast
+saves\dreamcast\flycast\states
+saves\dreamcast\flycast\vmu
 saves\fbneo
 saves\fbneo\fbneo
 saves\gba

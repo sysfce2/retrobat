@@ -25,9 +25,8 @@
 \system\templates\citron\user\config\qt-config.ini|\emulators\citron\user\config\qt-config.ini
 \system\templates\cxbx-reloaded\settings.ini|\emulators\cxbx-reloaded\settings.ini
 \system\templates\daphne\config.xml|\emulators\daphne\config.xml
-\system\templates\demul-old\Demul.ini|\emulators\demul-old\Demul.ini
-\system\templates\demul-old\gpuDX11old.ini|\emulators\demul-old\gpuDX11old.ini
 \system\templates\demul\Demul.ini|\emulators\demul\Demul.ini
+\system\templates\demul\gpuDX11old.ini|\emulators\demul\gpuDX11old.ini
 \system\templates\demul\gpuDX11.ini|\emulators\demul\gpuDX11.ini
 \system\templates\desmume\desmume.ini|\emulators\desmume\desmume.ini
 \system\templates\dhewm3\base\dhewm.cfg|\emulators\dhewm3\base\dhewm.cfg
@@ -53,7 +52,9 @@
 \system\templates\emulationstation\es_settings.cfg|\emulationstation\.emulationstation\es_settings.cfg
 \system\templates\fbneo\config\fbneo64.ini|\emulators\fbneo\config\fbneo64.ini
 \system\templates\flycast\emu.cfg|\emulators\flycast\emu.cfg
-\system\templates\flycast\data\nvmem.zip|\emulators\flycast\data
+\system\templates\flycast\nvmem_atomiswave.zip|\saves\atomiswave\reicast
+\system\templates\flycast\nvmem_naomi.zip|\saves\naomi\reicast
+\system\templates\flycast\nvmem.naomi2.zip|\saves\naomi2\reicast
 \system\templates\gemrb\GemRB.cfg|\emulators\gemrb\GemRB.cfg
 \system\templates\gopher64\portable_data\config\config.json|\emulators\gopher64\portable_data\config\config.json
 \system\templates\gzdoom\gzdoom_portable.ini|\emulators\gzdoom\gzdoom_portable.ini
@@ -131,9 +132,6 @@
 \system\templates\retroarch\config\MAME\MAME.opt|\emulators\retroarch\config\MAME\MAME.opt
 \system\templates\retroarch\retroarch-core-options.cfg|\emulators\retroarch\retroarch-core-options.cfg
 \system\templates\retroarch\retroarch.cfg|\emulators\retroarch\retroarch.cfg
-\system\templates\retroarch\saves\atomiswave\nvmem_atomiswave.zip|\saves\atomiswave\reicast
-\system\templates\retroarch\saves\naomi\nvmem_naomi.zip|\saves\naomi\reicast
-\system\templates\retroarch\saves\naomi2\nvmem.naomi2.zip|\saves\naomi2\reicast
 \system\templates\roms\halflife\valve\config.cfg|\roms\halflife\valve\config.cfg
 \system\templates\roms\halflife\extras.pak|\roms\halflife\extras.pak
 \system\templates\roms\halflife\valve\opengl.cfg|\roms\halflife\valve\opengl.cfg

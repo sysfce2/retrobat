@@ -37,10 +37,10 @@
         },
         "HotKeyMapping": {
             "General/Exit": "@(`Button 9`+`Button 7`)",
-            "General/Toggle Pause": "@(`Button 9`+`Button 0`)",
-            "Save State/Save to Selected Slot": "@(`Button 9`+`Button 1`)",
-            "General/Take Screenshot": "@(`Button 9`+`Button 1`)",
-            "Load State/Load from Selected Slot": "@(`Button 9`+`Button 2`)",
+            "General/Toggle Pause": "@(`Button 9`+`Button 2`)",
+            "Save State/Save to Selected Slot": "@(`Button 9`+`Button 3`)",
+            "General/Take Screenshot": "@(`Button 9`+`Button 3`)",
+            "Load State/Load from Selected Slot": "@(`Button 9`+`Button 0`)",
             "Other State Hotkeys/Increase Selected State Slot": "@(`Button 9`+`Button 12`)",
             "Other State Hotkeys/Decrease Selected State Slot": "@(`Button 9`+`Button 14`)"
         },
@@ -85,10 +85,10 @@
         },
         "HotKeyMapping": {
             "General/Exit": "@(`Button 3`+`Button 2`)",
-            "General/Toggle Pause": "@(`Button 3`+`Button 7`)",
-            "Save State/Save to Selected Slot": "@(`Button 3`+`Button 0`)",
-            "General/Take Screenshot": "@(`Button 3`+`Button 0`)",
-            "Load State/Load from Selected Slot": "@(`Button 3`+`Button 1`)",
+            "General/Toggle Pause": "@(`Button 3`+`Button 1`)",
+            "Save State/Save to Selected Slot": "@(`Button 3`+`Button 8`)",
+            "General/Take Screenshot": "@(`Button 3`+`Button 8`)",
+            "Load State/Load from Selected Slot": "@(`Button 3`+`Button 7`)",
             "Other State Hotkeys/Increase Selected State Slot": "@(`Button 3`+`Button 10`)",
             "Other State Hotkeys/Decrease Selected State Slot": "@(`Button 3`+`Button 11`)"
         },

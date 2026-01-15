@@ -205,23 +205,6 @@
 		<region>wr</region>
 	</game>
 	<game>
-		<path>./demul-old.menu</path>
-		<name>Demul Old DX11 Plugin (Gaelco)</name>
-		<desc>Run Demul Old DX11 Plugin (Gaelco).</desc>
-		<image>./media/demulold-logo.png</image>
-		<marquee>./media/demulold-logo.png</marquee>
-		<rating>0</rating>
-		<releasedate />
-		<developer>Demul Team</developer>
-		<publisher>Demul Team</publisher>
-		<genre>Emulator</genre>
-		<playcount />
-		<lastplayed />
-		<gametime />
-		<lang>en</lang>
-		<region>wr</region>
-	</game>
-	<game>
 		<path>./desmume.menu</path>
 		<name>DesMuMe (Nintendo DS)</name>
 		<desc>Run DesMuMe (Nintendo DS).</desc>
