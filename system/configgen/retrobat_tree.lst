@@ -229,6 +229,9 @@ emulators\play\Play Data Files\inputprofiles
 emulators\ppsspp
 emulators\project64
 emulators\project64\Config
+emulators\project64\Plugin
+emulators\project64\Plugin\GFX
+emulators\project64\Plugin\GFX\GLideN64
 emulators\psxmame
 emulators\psxmame\cfg
 emulators\psxmame\ctrlr
@@ -432,9 +435,6 @@ saves\supergrafx
 saves\supergrafx\mednafen
 saves\supergrafx\mednafen\sstates
 saves\switch
-saves\switch\dump
-saves\switch\load
-saves\switch\nand
 saves\switch\ryujinx
 saves\switch\ryujinx\portable
 saves\switch\ryujinx\portable\system

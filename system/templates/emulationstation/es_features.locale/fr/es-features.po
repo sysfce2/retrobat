@@ -10307,7 +10307,11 @@ msgstr "PLEIN ÉCRAN FENÊTRÉ"
 
 msgctxt "game_options"
 msgid "TRUE FULLSCREEN"
-msgstr "VRAI PLEIN ÉCRAN"
+msgstr "PLEIN ÉCRAN EXCLUSIF"
+
+msgctxt "game_options"
+msgid "EXCLUSIVE FULLSCREEN"
+msgstr "PLEIN ÉCRAN EXCLUSIF"
 
 msgctxt "game_options"
 msgid "Force P1 pad index, can be useful if XInput devices or not odered right."

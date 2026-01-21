@@ -124,6 +124,7 @@
 \system\templates\ppsspp\assets\shaders\ppsspp_shaders.zip|\emulators\ppsspp\assets\shaders
 \system\templates\ppsspp\SYSTEM\ppsspp.ini|\saves\psp\SYSTEM\ppsspp.ini
 \system\templates\project64\Config\Project64.cfg|\emulators\project64\Config\Project64.cfg
+\system\templates\project64\Plugin\GFX\GLideN64\GLideN64.ini|\emulators\project64\Plugin\GFX\GLideN64\GLideN64.ini
 \system\templates\psxmame\mame.ini|\emulators\psxmame\mame.ini
 \system\templates\raine\config\raine32_sdl.cfg|\emulators\raine\config\raine32_sdl.cfg
 \system\templates\raze\raze_portable.ini|\emulators\raze\raze_portable.ini
