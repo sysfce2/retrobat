@@ -47,6 +47,7 @@
 \system\templates\eka2l1\config.yml|\emulators\eka2l1\config.yml
 \system\templates\emulationstation\batocera-store.cfg|\emulationstation\batocera-store.cfg
 \system\templates\emulationstation\emulatorLauncher.cfg|\emulationstation\emulatorLauncher.cfg
+\system\templates\emulationstation\kbhotkeysdics.json|\emulationstation\resources\kbhotkeysdics.json
 \system\templates\emulationstation\es_input.cfg|\emulationstation\.emulationstation\es_input.cfg
 \system\templates\emulationstation\es_padtokey.cfg|\emulationstation\.emulationstation\es_padtokey.cfg
 \system\templates\emulationstation\es_settings.cfg|\emulationstation\.emulationstation\es_settings.cfg

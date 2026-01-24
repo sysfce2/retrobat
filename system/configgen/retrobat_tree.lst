@@ -1,4 +1,6 @@
 bios
+bios\bsyndrome
+bios\bsyndrome\MUSIC
 bios\cannonball
 bios\dc
 bios\dc\textures
@@ -27,6 +29,7 @@ bios\hbmame\samples
 bios\HdPacks
 bios\keropi
 bios\kronos
+bios\laseractive
 bios\mame
 bios\mame\artwork
 bios\mame\hash
@@ -57,6 +60,7 @@ bios\nxengine
 bios\openlara
 bios\openmsx
 bios\openmsx\share
+bios\openmsx\share\systemroms
 bios\pcsx2
 bios\pcsx2\bios
 bios\pcsx2\textures
