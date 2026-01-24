@@ -7,7 +7,6 @@
 # Here are the default RetroBat values:
 #default:
 #  input_menu_toggle: f1
-#  input_desktop_menu_toggle: f5
 #  input_toggle_fullscreen: f
 #  input_hold_fast_forward: l
 #  input_rewind: backspace
@@ -20,3 +19,12 @@
 #  input_state_slot_increase: f7
 #  input_pause_toggle: p
 #  input_exit_emulator: escape
+#  input_shader_next: m
+#  input_shader_prev: n
+#  input_disk_prev: f9
+#  input_disk_next: f10
+#  input_game_focus_toggle: scroll_lock
+#  input_grab_mouse_toggle: f11
+#  input_audio_mute: o
+#  input_bind_hold: 2
+#  input_bind_timeout: 5
