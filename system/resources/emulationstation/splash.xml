@@ -2,14 +2,14 @@
 <theme>
   <formatVersion>7</formatVersion>
   <variables>
-    <baseColor>c6297c</baseColor>
-    <gradientEndColor>7e297c</gradientEndColor>
-    <backgroundColor>252525</backgroundColor>
-    <centerFadeColor>8b000050</centerFadeColor>
+    <baseColor>d4af37</baseColor>
+    <gradientEndColor>9c7c19</gradientEndColor>
+    <backgroundColor>1f1f1f</backgroundColor>
+    <centerFadeColor>6b4f1d50</centerFadeColor>
   </variables>
   <view name="splash">
     <splash name="splash">
-      <backgroundColor>1b0020</backgroundColor>
+      <backgroundColor>1a1a1a</backgroundColor>
     </splash>
     <image name="progressbar">
       <origin>0 0</origin>
